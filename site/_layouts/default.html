@@ -1,10 +1,11 @@
+{% include base.html %}
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>{{ page.title }} - {{ site.title }}</title>
-    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ base }}/assets/css/main.css">
   </head>
   <body class="js-enabled">
     <a class="nhsuk-skip-link" href="#maincontent">Skip to main content</a>
@@ -46,6 +47,6 @@
       </div>
     </footer>
 
-    <script src="{{ base.url | prepend: site.url }}/scripts/index.js"></script>
+    <script src="{{ base }}/scripts/index.js"></script>
   </body>
 </html>
