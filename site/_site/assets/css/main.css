@@ -7503,14 +7503,37 @@ body {
   position: absolute;
   top: 16px;
   color: white;
+  z-index: 10;
 }
 .hef-menu__link span {
   font-size: 48px;
 }
-.hef-menu__link:hover, .hef-menu__link:visited {
+.hef-menu__link:hover, .hef-menu__link:visited, .hef-menu__link:focus, .hef-menu__link:focus:visited {
   color: white;
+  background: transparent;
+  box-shadow: none;
 }
-
+.hef-menu__link-text--hidden {
+  display: none;
+}
+.hef-menu__container {
+  box-sizing: border-box;
+  padding: 20px;
+  position: fixed;
+  right: -400px;
+  top: 80px;
+  width: 400px;
+  height: calc(100vh - 80px);
+  background: white;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: right 0.2s ease-out;
+}
+.hef-menu__container--open {
+  right: 0px;
+}
 .nhsuk-main-wrapper {
   min-height: calc(100vh - 180px);
 }
