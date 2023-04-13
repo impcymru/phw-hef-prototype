@@ -1,12 +1,13 @@
-{% include base.html %}
+
+
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="en-US">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <title>{{ page.title }} - {{ site.title }}</title>
+    <title>Settings - PHW Health Equality Framework</title>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-    <link rel="stylesheet" href="{{ base }}/assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
   </head>
   <body class="js-enabled">
     <a class="nhsuk-skip-link" href="#maincontent">Skip to main content</a>
@@ -41,7 +42,80 @@
           </a>
         </div>
 
-        {% include menu.html %}
+        
+
+<div class="hef-menu" data-component="true" data-component-type="mainmenu">
+  <a class="hef-menu__link" href="/">
+    <span class="material-symbols-outlined">menu</span>
+    <span class="material-symbols-outlined hef-menu__link-text--hidden"
+      >close</span
+    >
+  </a>
+
+  <div class="hef-menu__container">
+    <div class="hef-menu__body">
+      <nav class="nhsuk-contents-list" role="navigation" aria-label="Main menu">
+        <h2 class="nhsuk-u-visually-hidden">Main Menu</h2>
+        <ol class="nhsuk-contents-list__list">
+          <li class="nhsuk-contents-list__item">
+            <a class="nhsuk-contents-list__link" href="../">Home</a>
+          </li>
+          <li class="nhsuk-contents-list__item">
+            <a class="nhsuk-contents-list__link" href="../patients"
+              >Patient list</a
+            >
+          </li>
+
+          <li class="nhsuk-contents-list__item">
+            <a
+              class="nhsuk-contents-list__link"
+              href="../patients/drafts.html"
+              >Drafts</a
+            >
+          </li>
+          <li class="nhsuk-contents-list__item">
+            <a
+              class="nhsuk-contents-list__link"
+              href="../patients/reminders.html"
+              >Reminders</a
+            >
+          </li>
+          <li class="nhsuk-contents-list__item">
+            <a
+              class="nhsuk-contents-list__link"
+              href="../patients/deleted.html"
+              >Deleted patients</a
+            >
+          </li>
+
+          <li class="nhsuk-contents-list__item">
+            <a
+              class="nhsuk-contents-list__link"
+              href="../patients/download.html"
+              >Download patient data</a
+            >
+          </li>
+        </ol>
+      </nav>
+    </div>
+    <div class="hef-menu__body">
+      <nav class="nhsuk-contents-list" role="navigation" aria-label="Main menu">
+        <ol class="nhsuk-contents-list__list">
+          <li class="nhsuk-contents-list__item">
+            <a class="nhsuk-contents-list__link" href="../settings"
+              >Settings</a
+            >
+          </li>
+
+          <li class="nhsuk-contents-list__item">
+            <a class="nhsuk-contents-list__link" href="../">Logout</a>
+          </li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+</div>
+
   
       </div>
   
@@ -51,7 +125,8 @@
 
       <main class="nhsuk-main-wrapper " id="maincontent" role="main">
   
-        {{ content }}
+        <h1>Settings</h1>
+
        
       </main>
     </div>
@@ -67,6 +142,6 @@
       </div>
     </footer>
 
-    <script src="{{ base }}/scripts/index.js"></script>
+    <script src="../scripts/index.js"></script>
   </body>
 </html>

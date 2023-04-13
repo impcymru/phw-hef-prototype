@@ -1,3 +1,4 @@
+{% include base.html %}
 <div class="hef-menu" data-component="true" data-component-type="mainmenu">
   <a class="hef-menu__link" href="/">
     <span class="material-symbols-outlined">menu</span>
@@ -12,24 +13,40 @@
         <h2 class="nhsuk-u-visually-hidden">Main Menu</h2>
         <ol class="nhsuk-contents-list__list">
           <li class="nhsuk-contents-list__item">
-            <a class="nhsuk-contents-list__link" href="/">Home</a>
+            <a class="nhsuk-contents-list__link" href="{{ base }}/">Home</a>
           </li>
           <li class="nhsuk-contents-list__item">
-            <a class="nhsuk-contents-list__link" href="/">Patient list</a>
-          </li>
-
-          <li class="nhsuk-contents-list__item">
-            <a class="nhsuk-contents-list__link" href="/">Drafts</a>
-          </li>
-          <li class="nhsuk-contents-list__item">
-            <a class="nhsuk-contents-list__link" href="/">Reminders</a>
-          </li>
-          <li class="nhsuk-contents-list__item">
-            <a class="nhsuk-contents-list__link" href="/">Deleted patients</a>
+            <a class="nhsuk-contents-list__link" href="{{ base }}/patients"
+              >Patient list</a
+            >
           </li>
 
           <li class="nhsuk-contents-list__item">
-            <a class="nhsuk-contents-list__link" href="/"
+            <a
+              class="nhsuk-contents-list__link"
+              href="{{ base }}/patients/drafts.html"
+              >Drafts</a
+            >
+          </li>
+          <li class="nhsuk-contents-list__item">
+            <a
+              class="nhsuk-contents-list__link"
+              href="{{ base }}/patients/reminders.html"
+              >Reminders</a
+            >
+          </li>
+          <li class="nhsuk-contents-list__item">
+            <a
+              class="nhsuk-contents-list__link"
+              href="{{ base }}/patients/deleted.html"
+              >Deleted patients</a
+            >
+          </li>
+
+          <li class="nhsuk-contents-list__item">
+            <a
+              class="nhsuk-contents-list__link"
+              href="{{ base }}/patients/download.html"
               >Download patient data</a
             >
           </li>
@@ -40,11 +57,13 @@
       <nav class="nhsuk-contents-list" role="navigation" aria-label="Main menu">
         <ol class="nhsuk-contents-list__list">
           <li class="nhsuk-contents-list__item">
-            <a class="nhsuk-contents-list__link" href="/">Settings</a>
+            <a class="nhsuk-contents-list__link" href="{{ base }}/settings"
+              >Settings</a
+            >
           </li>
 
           <li class="nhsuk-contents-list__item">
-            <a class="nhsuk-contents-list__link" href="/">Logout</a>
+            <a class="nhsuk-contents-list__link" href="{{ base }}/">Logout</a>
           </li>
         </ol>
       </nav>
