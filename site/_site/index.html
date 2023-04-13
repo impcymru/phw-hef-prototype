@@ -42,7 +42,9 @@
           </a>
         </div>
 
-        <div class="hef-menu" data-component="true" data-component-type="mainmenu">
+        
+
+<div class="hef-menu" data-component="true" data-component-type="mainmenu">
   <a class="hef-menu__link" href="/">
     <span class="material-symbols-outlined">menu</span>
     <span class="material-symbols-outlined hef-menu__link-text--hidden"
@@ -56,24 +58,40 @@
         <h2 class="nhsuk-u-visually-hidden">Main Menu</h2>
         <ol class="nhsuk-contents-list__list">
           <li class="nhsuk-contents-list__item">
-            <a class="nhsuk-contents-list__link" href="/">Home</a>
+            <a class="nhsuk-contents-list__link" href="./">Home</a>
           </li>
           <li class="nhsuk-contents-list__item">
-            <a class="nhsuk-contents-list__link" href="/">Patient list</a>
-          </li>
-
-          <li class="nhsuk-contents-list__item">
-            <a class="nhsuk-contents-list__link" href="/">Drafts</a>
-          </li>
-          <li class="nhsuk-contents-list__item">
-            <a class="nhsuk-contents-list__link" href="/">Reminders</a>
-          </li>
-          <li class="nhsuk-contents-list__item">
-            <a class="nhsuk-contents-list__link" href="/">Deleted patients</a>
+            <a class="nhsuk-contents-list__link" href="./patients"
+              >Patient list</a
+            >
           </li>
 
           <li class="nhsuk-contents-list__item">
-            <a class="nhsuk-contents-list__link" href="/"
+            <a
+              class="nhsuk-contents-list__link"
+              href="./patients/drafts.html"
+              >Drafts</a
+            >
+          </li>
+          <li class="nhsuk-contents-list__item">
+            <a
+              class="nhsuk-contents-list__link"
+              href="./patients/reminders.html"
+              >Reminders</a
+            >
+          </li>
+          <li class="nhsuk-contents-list__item">
+            <a
+              class="nhsuk-contents-list__link"
+              href="./patients/deleted.html"
+              >Deleted patients</a
+            >
+          </li>
+
+          <li class="nhsuk-contents-list__item">
+            <a
+              class="nhsuk-contents-list__link"
+              href="./patients/download.html"
               >Download patient data</a
             >
           </li>
@@ -84,11 +102,13 @@
       <nav class="nhsuk-contents-list" role="navigation" aria-label="Main menu">
         <ol class="nhsuk-contents-list__list">
           <li class="nhsuk-contents-list__item">
-            <a class="nhsuk-contents-list__link" href="/">Settings</a>
+            <a class="nhsuk-contents-list__link" href="./settings"
+              >Settings</a
+            >
           </li>
 
           <li class="nhsuk-contents-list__item">
-            <a class="nhsuk-contents-list__link" href="/">Logout</a>
+            <a class="nhsuk-contents-list__link" href="./">Logout</a>
           </li>
         </ol>
       </nav>
@@ -105,13 +125,11 @@
 
       <main class="nhsuk-main-wrapper " id="maincontent" role="main">
   
-        <h2 id="welcome-to-phw-hef">Welcome to PHW HEF</h2>
+        <h1>Welcome to PHW HEF</h1>
 
 <p>Login to begin</p>
 
-        <div data-component="true" data-component-type="helloworld">
-          Message goes here...
-        </div>
+       
       </main>
     </div>
    
