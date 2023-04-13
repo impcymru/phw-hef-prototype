@@ -11,3 +11,35 @@ body {
   color: $bodyColor;
   font-family: $bodyFont;
 }
+
+// header
+.nhsuk-header {
+  &__logo {
+    &--offset {
+      svg {
+        top: 0px;
+        position: absolute;
+      }
+    }
+  }
+}
+
+// main menu
+.hef-menu {
+  float: right;
+
+  &__link {
+    position: absolute;
+    top: 16px;
+    color: white;
+
+    span {
+      font-size: 48px;
+    }
+
+    &:hover,
+    &:visited {
+      color: white;
+    }
+  }
+}
