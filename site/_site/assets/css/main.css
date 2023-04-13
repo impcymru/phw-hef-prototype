@@ -7511,4 +7511,8 @@ body {
   color: white;
 }
 
+.nhsuk-main-wrapper {
+  min-height: calc(100vh - 180px);
+}
+
 /*# sourceMappingURL=main.css.map */
