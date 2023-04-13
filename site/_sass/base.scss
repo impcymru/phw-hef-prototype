@@ -24,10 +24,22 @@ body {
   }
 }
 
+// main menu
 .hef-menu {
   float: right;
 
   &__link {
-    color: black;
+    position: absolute;
+    top: 16px;
+    color: white;
+
+    span {
+      font-size: 48px;
+    }
+
+    &:hover,
+    &:visited {
+      color: white;
+    }
   }
 }

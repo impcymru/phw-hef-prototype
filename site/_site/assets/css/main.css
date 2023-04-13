@@ -7500,7 +7500,15 @@ body {
   float: right;
 }
 .hef-menu__link {
-  color: black;
+  position: absolute;
+  top: 16px;
+  color: white;
+}
+.hef-menu__link span {
+  font-size: 48px;
+}
+.hef-menu__link:hover, .hef-menu__link:visited {
+  color: white;
 }
 
 /*# sourceMappingURL=main.css.map */
