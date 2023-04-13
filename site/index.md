@@ -1,8 +1,8 @@
 ---
 layout: default
-title: "Happy Jekylling!"
+title: "Home"
 ---
 
-## You're ready to go!
+## Welcome to PHW HEF
 
-Start developing your Jekyll website.
+Login to begin
