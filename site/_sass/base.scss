@@ -11,3 +11,23 @@ body {
   color: $bodyColor;
   font-family: $bodyFont;
 }
+
+// header
+.nhsuk-header {
+  &__logo {
+    &--offset {
+      svg {
+        top: 0px;
+        position: absolute;
+      }
+    }
+  }
+}
+
+.hef-menu {
+  float: right;
+
+  &__link {
+    color: black;
+  }
+}
