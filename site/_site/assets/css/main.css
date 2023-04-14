@@ -7538,4 +7538,31 @@ body {
   min-height: calc(100vh - 180px);
 }
 
+.hef-table__sort-button {
+  font-size: 16px;
+  border: none;
+  background: transparent;
+  position: relative;
+  right: 0;
+  width: 16px;
+  height: 16px;
+  top: 6px;
+  padding: 0;
+}
+.hef-table__sort-button span {
+  font-size: 24px;
+}
+.hef-table__pagination {
+  position: relative;
+  font-size: 16px;
+  color: black;
+  display: flex;
+  flex-direction: row;
+}
+.hef-table__pagination-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=main.css.map */

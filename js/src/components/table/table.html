@@ -1,0 +1,34 @@
+<table>
+  <thead>
+    <tr>
+      {% for header in headers %}
+      <th>
+        {{ header.label }}
+        <button class="hef-table__sort-button" data-sort="{{header.key}}">
+          <span class="material-symbols-outlined">expand_more</span>
+        </button>
+      </th>
+      {% endfor %}
+    </tr>
+  </thead>
+  <tbody>
+    {% for row in rows %}
+
+    <tr>
+      {% for header in headers %}
+      <td>{{ row[header.key] }}</td>
+      {% endfor %}
+    </tr>
+
+    {% endfor %}
+  </tbody>
+</table>
+<div class="hef-table__pagination">
+  <button class="hef-table__pagination-button" data-paginate-left="true">
+    <span class="material-symbols-outlined">chevron_left</span>
+  </button>
+  {{pagination.offset}} to {{pagination.limit}} of {{pagination.total}}
+  <button class="hef-table__pagination-button" data-paginate-right="true">
+    <span class="material-symbols-outlined">chevron_right</span>
+  </button>
+</div>
