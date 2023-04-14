@@ -1,6 +1,13 @@
 ---
 layout: default
-title: "Patients"
+title: 'Patients'
+data: '{"name": "dave"}'
 ---
 
-<h1>Patients</h1>
+<!-- prettier-ignore-attribute data-component-data -->
+<div
+  class="hef-table"
+  data-component="true"
+  data-component-type="table"
+  data-component-data='{{ site.data.patients.patients }}'
+></div>
