@@ -7548,6 +7548,7 @@ body {
   height: 16px;
   top: 6px;
   padding: 0;
+  cursor: pointer;
 }
 .hef-table__sort-button span {
   font-size: 24px;

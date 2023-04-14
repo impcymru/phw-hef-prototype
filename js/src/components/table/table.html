@@ -2,10 +2,13 @@
   <thead>
     <tr>
       {% for header in headers %}
-      <th>
+      <th {% if header.width %}style="width:{{header.width}}" {% endif %}>
         {{ header.label }}
         <button class="hef-table__sort-button" data-sort="{{header.key}}">
-          <span class="material-symbols-outlined">expand_more</span>
+          <span class="material-symbols-outlined"
+            >{% if sortCol == header.key and order == 'DESC' %}expand_less{%
+            else %}expand_more{% endif %}</span
+          >
         </button>
       </th>
       {% endfor %}
