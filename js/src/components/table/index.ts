@@ -2,6 +2,11 @@ import { render, BindingProps } from 'dom-component-helper';
 import * as nunjucks from 'nunjucks';
 import template from './table.html';
 
+enum Order {
+  ASC = 'ASC',
+  DESC = 'DESC',
+}
+
 const Table = (props: BindingProps) => {
   const { rows, headers } = JSON.parse(props.data);
   const env = new nunjucks.Environment();
@@ -10,14 +15,16 @@ const Table = (props: BindingProps) => {
   let limit = 10;
   let offset = 0;
   let sortCol = headers[0].key;
+  let order = Order.ASC;
 
   const filter = (rawRows: unknown[]) => {
     const newRows = rawRows.slice().sort((a: any, b: any) => {
-      console.log(a[sortCol], b[sortCol]);
-      return a[sortCol] > b[sortCol] ? 1 : -1;
-    });
+      if (order === Order.ASC) {
+        return a[sortCol] > b[sortCol] ? 1 : -1;
+      }
 
-    console.log(newRows);
+      return a[sortCol] > b[sortCol] ? -1 : 1;
+    });
 
     return newRows.slice(offset, offset + limit);
   };
@@ -35,6 +42,8 @@ const Table = (props: BindingProps) => {
       rows: filter(rows),
       headers,
       pagination: pagination(),
+      sortCol,
+      order,
     });
 
     const body = document.createElement('div');
@@ -42,15 +51,17 @@ const Table = (props: BindingProps) => {
 
     element = render(element, body);
 
-    body.querySelector('[data-paginate-left]').addEventListener('click', () => {
-      if (offset > 0) {
-        offset -= limit;
-      }
+    element
+      .querySelector('[data-paginate-left]')
+      .addEventListener('click', () => {
+        if (offset > 0) {
+          offset -= limit;
+        }
 
-      doRender();
-    });
+        doRender();
+      });
 
-    body
+    element
       .querySelector('[data-paginate-right]')
       .addEventListener('click', () => {
         if (offset < rows.length) {
@@ -60,12 +71,20 @@ const Table = (props: BindingProps) => {
         doRender();
       });
 
-    body.querySelector('[data-sort]').addEventListener('click', (evt: any) => {
-      const key = evt.target.getAttribute('data-sort');
-      sortCol = key;
+    element.querySelectorAll('[data-sort]').forEach((el) => {
+      const key = el.getAttribute('data-sort');
+      el.addEventListener('click', (evt: any) => {
+        if (key === sortCol) {
+          order = order === Order.ASC ? Order.DESC : Order.ASC;
+        } else {
+          order = Order.ASC;
+          sortCol = key;
+        }
 
-      console.log('sorting...');
-      doRender();
+        offset = 0;
+
+        doRender();
+      });
     });
   };
 
