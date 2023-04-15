@@ -7498,15 +7498,24 @@ body {
 
 .hef-menu {
   float: right;
+  height: 40px;
+}
+.hef-menu__links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .hef-menu__link {
-  position: absolute;
-  top: 16px;
+  position: relative;
   color: white;
   z-index: 10;
+  padding-left: 20px;
 }
 .hef-menu__link span {
   font-size: 48px;
+}
+.hef-menu__link span.smaller {
+  font-size: 24px;
 }
 .hef-menu__link:hover, .hef-menu__link:visited, .hef-menu__link:focus, .hef-menu__link:focus:visited {
   color: white;
@@ -7564,6 +7573,22 @@ body {
   background: transparent;
   border: none;
   cursor: pointer;
+}
+
+.hef-cardcontrol {
+  display: flex;
+  flex-direction: row;
+}
+.hef-cardcontrol__details {
+  width: 60%;
+}
+.hef-cardcontrol__controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+.hef-cardcontrol__controls div {
+  padding-left: 10px;
 }
 
 /*# sourceMappingURL=main.css.map */
