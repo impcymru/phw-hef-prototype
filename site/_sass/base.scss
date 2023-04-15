@@ -27,14 +27,25 @@ body {
 // main menu
 .hef-menu {
   float: right;
+  height: 40px;
+
+  &__links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
 
   &__link {
-    position: absolute;
-    top: 16px;
+    position: relative;
     color: white;
     z-index: 10;
+    padding-left: 20px;
 
     span {
+      &.smaller {
+        font-size: 24px;
+      }
+
       font-size: 48px;
     }
 
@@ -114,5 +125,25 @@ body {
     background: transparent;
     border: none;
     cursor: pointer;
+  }
+}
+
+// profile card
+.hef-cardcontrol {
+  display: flex;
+  flex-direction: row;
+
+  &__details {
+    width: 60%;
+  }
+
+  &__controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+
+    div {
+      padding-left: 10px;
+    }
   }
 }
