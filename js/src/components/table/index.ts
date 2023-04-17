@@ -54,6 +54,20 @@ const Table = (props: BindingProps) => {
 
     element = render(element, body);
 
+    element.querySelectorAll('[data-select]').forEach((el: Element) => {
+      const row = el.closest('tr');
+
+      el.addEventListener('change', (evt: Event) => {
+        const currentTarget = evt.currentTarget as any;
+
+        if (currentTarget.checked) {
+          row.classList.add('hef-table__row--selected');
+        } else {
+          row.classList.remove('hef-table__row--selected');
+        }
+      });
+    });
+
     element
       .querySelector('[data-paginate-left]')
       .addEventListener('click', () => {

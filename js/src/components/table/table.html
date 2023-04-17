@@ -19,9 +19,9 @@
   <tbody>
     {% for row in rows %}
 
-    <tr>
+    <tr class="">
       {% if selectable %}
-      <td><input type="checkbox" value="" /></td>
+      <td><input data-select="true" type="checkbox" value="" /></td>
       {% endif %} {% for header in headers %}
       <td>{{ row[header.key] }}</td>
       {% endfor %}

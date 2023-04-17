@@ -7547,6 +7547,9 @@ body {
   min-height: calc(100vh - 180px);
 }
 
+.hef-table__row--selected td {
+  background: white;
+}
 .hef-table__sort-button {
   font-size: 16px;
   border: none;

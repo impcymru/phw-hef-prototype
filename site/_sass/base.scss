@@ -97,6 +97,14 @@ body {
 // tables
 
 .hef-table {
+  &__row {
+    &--selected {
+      td {
+        background: white;
+      }
+    }
+  }
+
   &__sort-button {
     font-size: 16px;
     border: none;
