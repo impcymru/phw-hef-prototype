@@ -216,3 +216,45 @@ body {
     color: white;
   }
 }
+
+//profile
+.hef-intro {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  &__title {
+  }
+
+  &__controls {
+  }
+}
+
+// search box
+
+.hef-search {
+  &__container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__input-control {
+    height: 60px;
+    padding: 0 10px;
+  }
+
+  &__button-control {
+    padding-left: 10px;
+    width: auto;
+
+    button {
+      margin-bottom: 0;
+      width: 160px;
+    }
+  }
+}
+
+// footer controls
+.hef-button-control {
+  text-align: right;
+}

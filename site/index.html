@@ -1,8 +1,48 @@
 ---
 layout: default
-title: "Home"
+title: 'Home'
 ---
 
-<h1>Welcome to PHW HEF</h1>
+<div class="hef-intro">
+  <h1>Welcome back, Gwen</h1>
+  <div class="hef-intro__controls">
+    <button class="nhsuk-button">Create new patient</button>
+  </div>
+</div>
 
-<p>Login to begin</p>
+<div class="nhsuk-card">
+  <div class="nhsuk-card__content">
+    <div class="hef-search">
+      <div class="hef-search__wrapper">
+        <div class="hef-search__container">
+          <input
+            placeholder="Search"
+            type="text"
+            class="nhsuk-input hef-search__input-control"
+          />
+
+          <div class="hef-search__button-control">
+            <button class="nhsuk-button">Find patients</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div>
+  <h3>Your patients</h3>
+
+  <!-- prettier-ignore-attribute data-component-data -->
+  <div
+    class="hef-table"
+    data-component="true"
+    data-component-type="table"
+    data-component-data='{{ site.data.patients.patients }}'
+    data-component-config='{"selectable": false, "limit": 5}'
+  ></div>
+</div>
+
+<div class="hef-button-control">
+  <button class="nhsuk-button">Create new patient</button>
+</div>

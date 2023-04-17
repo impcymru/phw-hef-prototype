@@ -7645,4 +7645,30 @@ body {
   color: white;
 }
 
+.hef-intro {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.hef-search__container {
+  display: flex;
+  flex-direction: row;
+}
+.hef-search__input-control {
+  height: 60px;
+  padding: 0 10px;
+}
+.hef-search__button-control {
+  padding-left: 10px;
+  width: auto;
+}
+.hef-search__button-control button {
+  margin-bottom: 0;
+  width: 160px;
+}
+
+.hef-button-control {
+  text-align: right;
+}
+
 /*# sourceMappingURL=main.css.map */
