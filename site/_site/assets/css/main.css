@@ -7587,8 +7587,59 @@ body {
   flex-direction: row;
   justify-content: end;
 }
-.hef-cardcontrol__controls div {
+.hef-cardcontrol__controls .hef-cardcontrol_control {
   padding-left: 10px;
+}
+
+.hef-dialog__wrapper {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  background: rgba(0, 0, 0, 0.7);
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.hef-dialog__container {
+  width: 500px;
+  height: 450px;
+  background: white;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.hef-dialog__header {
+  width: 100%;
+  background: #005eb8;
+  height: 50px;
+}
+.hef-dialog__body {
+  padding: 10px;
+}
+.hef-dialog__controls {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: auto;
+}
+.hef-dialog__controls button {
+  margin-left: 10px;
+}
+.hef-dialog__close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  cursor: pointer;
+  display: block;
+  color: white;
 }
 
 /*# sourceMappingURL=main.css.map */

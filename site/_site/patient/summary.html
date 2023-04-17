@@ -147,11 +147,18 @@
       </div>
 
       <div class="hef-cardcontrol__controls">
-        <div>
-          <button class="nhsuk-button">Delete User</button>
+        <div
+          class="hef-cardcontrol_control"
+          data-component="true"
+          data-component-type="deletedialog"
+        >
+          <button class="nhsuk-button" data-delete-trigger="true">
+            Delete User
+          </button>
+          <div data-dialog-container="true"></div>
         </div>
 
-        <div>
+        <div class="hef-cardcontrol_control">
           <button class="nhsuk-button">New Assessment</button>
         </div>
       </div>
