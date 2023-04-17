@@ -9,6 +9,8 @@ enum Order {
 
 const Table = (props: BindingProps) => {
   const { rows, headers } = JSON.parse(props.data);
+  const config = JSON.parse(props.config);
+
   const env = new nunjucks.Environment();
   let element = props.domElement;
 
@@ -44,12 +46,27 @@ const Table = (props: BindingProps) => {
       pagination: pagination(),
       sortCol,
       order,
+      selectable: config.selectable || false,
     });
 
     const body = document.createElement('div');
     body.innerHTML = output;
 
     element = render(element, body);
+
+    element.querySelectorAll('[data-select]').forEach((el: Element) => {
+      const row = el.closest('tr');
+
+      el.addEventListener('change', (evt: Event) => {
+        const currentTarget = evt.currentTarget as any;
+
+        if (currentTarget.checked) {
+          row.classList.add('hef-table__row--selected');
+        } else {
+          row.classList.remove('hef-table__row--selected');
+        }
+      });
+    });
 
     element
       .querySelector('[data-paginate-left]')
