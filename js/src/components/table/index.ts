@@ -14,7 +14,7 @@ const Table = (props: BindingProps) => {
   const env = new nunjucks.Environment();
   let element = props.domElement;
 
-  let limit = 10;
+  let limit = config.limit || 10;
   let offset = 0;
   let sortCol = headers[0].key;
   let order = Order.ASC;
@@ -34,7 +34,7 @@ const Table = (props: BindingProps) => {
   const pagination = () => {
     return {
       offset: offset + 1,
-      limit: offset + 10,
+      limit: offset + limit,
       total: rows.length,
     };
   };
