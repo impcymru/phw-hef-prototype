@@ -5,7 +5,7 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <title>Reminders - PHW Health Equality Framework</title>
+    <title>Create - PHW Health Equality Framework</title>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="../assets/css/main.css">
     <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon">
@@ -142,7 +142,588 @@
 
       <main class="nhsuk-main-wrapper " id="maincontent" role="main">
   
-        <h1>Reminders</h1>
+        <h1>Create patient</h1>
+
+<fieldset class="nhsuk-fieldset">
+  <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
+    <h2 class="nhsuk-fieldset__heading">Individual details</h2>
+  </legend>
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-one-half">
+      <div class="nhsuk-form-group">
+        <label class="nhsuk-label" for="firstname"> First name </label>
+        <input
+          class="nhsuk-input"
+          id="firstname"
+          name="firstname"
+          type="text"
+        />
+      </div>
+    </div>
+    <div class="nhsuk-grid-column-one-half">
+      <div class="nhsuk-form-group">
+        <label class="nhsuk-label" for="lastname"> Last name </label>
+        <input class="nhsuk-input" id="lastname" name="lastname" type="text" />
+      </div>
+    </div>
+  </div>
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+      <div class="nhsuk-form-group">
+        <label class="nhsuk-label" for="address"> Address </label>
+        <input class="nhsuk-input" id="address" name="address" type="text" />
+      </div>
+    </div>
+  </div>
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-one-half">
+      <div class="nhsuk-form-group">
+        <label class="nhsuk-label" for="postcode"> Postcode </label>
+        <input class="nhsuk-input" id="postcode" name="postcode" type="text" />
+      </div>
+    </div>
+
+    <div class="nhsuk-grid-column-one-half">
+      <div class="nhsuk-form-group">
+        <label class="nhsuk-label" for="select-1"> Accommodation type </label>
+        <select
+          class="nhsuk-select hef-select--full-width"
+          id="select-1"
+          name="select-1"
+        >
+          <option value="1">Option 1</option>
+          <option value="2" selected>Option 2</option>
+          <option value="3" disabled>Option 3</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-one-half">
+      <div class="nhsuk-form-group">
+        <label class="nhsuk-label" for="NHSnumber"> NHS number </label>
+        <input
+          class="nhsuk-input"
+          id="NHSnumber"
+          name="NHSnumber"
+          type="text"
+        />
+      </div>
+    </div>
+    <div class="nhsuk-grid-column-one-half">
+      <div class="nhsuk-form-group">
+        <label class="nhsuk-label" for="localID"> Local ID number </label>
+        <input class="nhsuk-input" id="localID" name="localID" type="text" />
+      </div>
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="nhsuk-fieldset">
+  <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
+    <h1 class="nhsuk-fieldset__heading">Profile of needs</h1>
+  </legend>
+
+  <div class="nhsuk-checkboxes">
+    
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-form-group">
+         
+        <div class="nhsuk-grid-column-one-third">
+          <div class="nhsuk-checkboxes__item">
+            <input
+              class="nhsuk-checkboxes__input"
+              id="example-1_1"
+              name="example"
+              type="checkbox"
+              value=""
+            />
+            <label
+              class="nhsuk-label nhsuk-checkboxes__label"
+              for="example-1_1"
+            >
+               Mental Health Illness 
+            </label>
+          </div>
+        </div>
+         
+        <div class="nhsuk-grid-column-one-third">
+          <div class="nhsuk-checkboxes__item">
+            <input
+              class="nhsuk-checkboxes__input"
+              id="example-1_2"
+              name="example"
+              type="checkbox"
+              value=""
+            />
+            <label
+              class="nhsuk-label nhsuk-checkboxes__label"
+              for="example-1_2"
+            >
+               Mental Health Illness 
+            </label>
+          </div>
+        </div>
+         
+        <div class="nhsuk-grid-column-one-third">
+          <div class="nhsuk-checkboxes__item">
+            <input
+              class="nhsuk-checkboxes__input"
+              id="example-1_3"
+              name="example"
+              type="checkbox"
+              value=""
+            />
+            <label
+              class="nhsuk-label nhsuk-checkboxes__label"
+              for="example-1_3"
+            >
+               Mental Health Illness 
+            </label>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-form-group">
+         
+        <div class="nhsuk-grid-column-one-third">
+          <div class="nhsuk-checkboxes__item">
+            <input
+              class="nhsuk-checkboxes__input"
+              id="example-2_1"
+              name="example"
+              type="checkbox"
+              value=""
+            />
+            <label
+              class="nhsuk-label nhsuk-checkboxes__label"
+              for="example-2_1"
+            >
+               Mental Health Illness 
+            </label>
+          </div>
+        </div>
+         
+        <div class="nhsuk-grid-column-one-third">
+          <div class="nhsuk-checkboxes__item">
+            <input
+              class="nhsuk-checkboxes__input"
+              id="example-2_2"
+              name="example"
+              type="checkbox"
+              value=""
+            />
+            <label
+              class="nhsuk-label nhsuk-checkboxes__label"
+              for="example-2_2"
+            >
+               Mental Health Illness 
+            </label>
+          </div>
+        </div>
+         
+        <div class="nhsuk-grid-column-one-third">
+          <div class="nhsuk-checkboxes__item">
+            <input
+              class="nhsuk-checkboxes__input"
+              id="example-2_3"
+              name="example"
+              type="checkbox"
+              value=""
+            />
+            <label
+              class="nhsuk-label nhsuk-checkboxes__label"
+              for="example-2_3"
+            >
+               Mental Health Illness 
+            </label>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-form-group">
+         
+        <div class="nhsuk-grid-column-one-third">
+          <div class="nhsuk-checkboxes__item">
+            <input
+              class="nhsuk-checkboxes__input"
+              id="example-3_1"
+              name="example"
+              type="checkbox"
+              value=""
+            />
+            <label
+              class="nhsuk-label nhsuk-checkboxes__label"
+              for="example-3_1"
+            >
+               Mental Health Illness 
+            </label>
+          </div>
+        </div>
+         
+        <div class="nhsuk-grid-column-one-third">
+          <div class="nhsuk-checkboxes__item">
+            <input
+              class="nhsuk-checkboxes__input"
+              id="example-3_2"
+              name="example"
+              type="checkbox"
+              value=""
+            />
+            <label
+              class="nhsuk-label nhsuk-checkboxes__label"
+              for="example-3_2"
+            >
+               Mental Health Illness 
+            </label>
+          </div>
+        </div>
+         
+        <div class="nhsuk-grid-column-one-third">
+          <div class="nhsuk-checkboxes__item">
+            <input
+              class="nhsuk-checkboxes__input"
+              id="example-3_3"
+              name="example"
+              type="checkbox"
+              value=""
+            />
+            <label
+              class="nhsuk-label nhsuk-checkboxes__label"
+              for="example-3_3"
+            >
+               Mental Health Illness 
+            </label>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-form-group">
+         
+        <div class="nhsuk-grid-column-one-third">
+          <div class="nhsuk-checkboxes__item">
+            <input
+              class="nhsuk-checkboxes__input"
+              id="example-4_1"
+              name="example"
+              type="checkbox"
+              value=""
+            />
+            <label
+              class="nhsuk-label nhsuk-checkboxes__label"
+              for="example-4_1"
+            >
+               Mental Health Illness 
+            </label>
+          </div>
+        </div>
+         
+        <div class="nhsuk-grid-column-one-third">
+          <div class="nhsuk-checkboxes__item">
+            <input
+              class="nhsuk-checkboxes__input"
+              id="example-4_2"
+              name="example"
+              type="checkbox"
+              value=""
+            />
+            <label
+              class="nhsuk-label nhsuk-checkboxes__label"
+              for="example-4_2"
+            >
+               Mental Health Illness 
+            </label>
+          </div>
+        </div>
+         
+        <div class="nhsuk-grid-column-one-third">
+          <div class="nhsuk-checkboxes__item">
+            <input
+              class="nhsuk-checkboxes__input"
+              id="example-4_3"
+              name="example"
+              type="checkbox"
+              value=""
+            />
+            <label
+              class="nhsuk-label nhsuk-checkboxes__label"
+              for="example-4_3"
+            >
+               Mental Health Illness 
+            </label>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-form-group">
+         
+        <div class="nhsuk-grid-column-one-third">
+          <div class="nhsuk-checkboxes__item">
+            <input
+              class="nhsuk-checkboxes__input"
+              id="example-5_1"
+              name="example"
+              type="checkbox"
+              value=""
+            />
+            <label
+              class="nhsuk-label nhsuk-checkboxes__label"
+              for="example-5_1"
+            >
+               Mental Health Illness 
+            </label>
+          </div>
+        </div>
+         
+        <div class="nhsuk-grid-column-one-third">
+          <div class="nhsuk-checkboxes__item">
+            <input
+              class="nhsuk-checkboxes__input"
+              id="example-5_2"
+              name="example"
+              type="checkbox"
+              value=""
+            />
+            <label
+              class="nhsuk-label nhsuk-checkboxes__label"
+              for="example-5_2"
+            >
+               Mental Health Illness 
+            </label>
+          </div>
+        </div>
+         
+        <div class="nhsuk-grid-column-one-third">
+          <div class="nhsuk-checkboxes__item">
+            <input
+              class="nhsuk-checkboxes__input"
+              id="example-5_3"
+              name="example"
+              type="checkbox"
+              value=""
+            />
+            <label
+              class="nhsuk-label nhsuk-checkboxes__label"
+              for="example-5_3"
+            >
+               Mental Health Illness 
+            </label>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-form-group">
+         
+        <div class="nhsuk-grid-column-one-third">
+          <div class="nhsuk-checkboxes__item">
+            <input
+              class="nhsuk-checkboxes__input"
+              id="example-6_1"
+              name="example"
+              type="checkbox"
+              value=""
+            />
+            <label
+              class="nhsuk-label nhsuk-checkboxes__label"
+              for="example-6_1"
+            >
+               Mental Health Illness 
+            </label>
+          </div>
+        </div>
+         
+        <div class="nhsuk-grid-column-one-third">
+          <div class="nhsuk-checkboxes__item">
+            <input
+              class="nhsuk-checkboxes__input"
+              id="example-6_2"
+              name="example"
+              type="checkbox"
+              value=""
+            />
+            <label
+              class="nhsuk-label nhsuk-checkboxes__label"
+              for="example-6_2"
+            >
+               Mental Health Illness 
+            </label>
+          </div>
+        </div>
+         
+        <div class="nhsuk-grid-column-one-third">
+          <div class="nhsuk-checkboxes__item">
+            <input
+              class="nhsuk-checkboxes__input"
+              id="example-6_3"
+              name="example"
+              type="checkbox"
+              value=""
+            />
+            <label
+              class="nhsuk-label nhsuk-checkboxes__label"
+              for="example-6_3"
+            >
+               Mental Health Illness 
+            </label>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-form-group">
+         
+        <div class="nhsuk-grid-column-one-third">
+          <div class="nhsuk-checkboxes__item">
+            <input
+              class="nhsuk-checkboxes__input"
+              id="example-7_1"
+              name="example"
+              type="checkbox"
+              value=""
+            />
+            <label
+              class="nhsuk-label nhsuk-checkboxes__label"
+              for="example-7_1"
+            >
+               Mental Health Illness 
+            </label>
+          </div>
+        </div>
+         
+        <div class="nhsuk-grid-column-one-third">
+          <div class="nhsuk-checkboxes__item">
+            <input
+              class="nhsuk-checkboxes__input"
+              id="example-7_2"
+              name="example"
+              type="checkbox"
+              value=""
+            />
+            <label
+              class="nhsuk-label nhsuk-checkboxes__label"
+              for="example-7_2"
+            >
+               Mental Health Illness 
+            </label>
+          </div>
+        </div>
+         
+        <div class="nhsuk-grid-column-one-third">
+          <div class="nhsuk-checkboxes__item">
+            <input
+              class="nhsuk-checkboxes__input"
+              id="example-7_3"
+              name="example"
+              type="checkbox"
+              value=""
+            />
+            <label
+              class="nhsuk-label nhsuk-checkboxes__label"
+              for="example-7_3"
+            >
+               Mental Health Illness 
+            </label>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-form-group">
+         
+        <div class="nhsuk-grid-column-one-third">
+          <div class="nhsuk-checkboxes__item">
+            <input
+              class="nhsuk-checkboxes__input"
+              id="example-8_1"
+              name="example"
+              type="checkbox"
+              value=""
+            />
+            <label
+              class="nhsuk-label nhsuk-checkboxes__label"
+              for="example-8_1"
+            >
+               Mental Health Illness 
+            </label>
+          </div>
+        </div>
+         
+        <div class="nhsuk-grid-column-one-third">
+          <div class="nhsuk-checkboxes__item">
+            <input
+              class="nhsuk-checkboxes__input"
+              id="example-8_2"
+              name="example"
+              type="checkbox"
+              value=""
+            />
+            <label
+              class="nhsuk-label nhsuk-checkboxes__label"
+              for="example-8_2"
+            >
+               Mental Health Illness 
+            </label>
+          </div>
+        </div>
+         
+        <div class="nhsuk-grid-column-one-third">
+          <div class="nhsuk-checkboxes__item">
+            <input
+              class="nhsuk-checkboxes__input"
+              id="example-8_3"
+              name="example"
+              type="checkbox"
+              value=""
+            />
+            <label
+              class="nhsuk-label nhsuk-checkboxes__label"
+              for="example-8_3"
+            >
+               Mental Health Illness 
+            </label>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
+  </div>
+</fieldset>
+
+<div class="hef-footer-controls">
+  <a class="nhsuk-back-link__link hef-link--back" href="/">
+    <span class="material-symbols-outlined">chevron_left</span>
+    Previous page</a
+  >
+
+  <button class="nhsuk-button nhsuk-button--secondary">
+    Save draft and exit
+  </button>
+  <button class="nhsuk-button">Save patient details</button>
+</div>
 
        
       </main>

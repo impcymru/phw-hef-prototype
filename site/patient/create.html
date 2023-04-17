@@ -1,0 +1,132 @@
+---
+layout: default
+title: 'Create'
+---
+
+<h1>Create patient</h1>
+
+<fieldset class="nhsuk-fieldset">
+  <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
+    <h2 class="nhsuk-fieldset__heading">Individual details</h2>
+  </legend>
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-one-half">
+      <div class="nhsuk-form-group">
+        <label class="nhsuk-label" for="firstname"> First name </label>
+        <input
+          class="nhsuk-input"
+          id="firstname"
+          name="firstname"
+          type="text"
+        />
+      </div>
+    </div>
+    <div class="nhsuk-grid-column-one-half">
+      <div class="nhsuk-form-group">
+        <label class="nhsuk-label" for="lastname"> Last name </label>
+        <input class="nhsuk-input" id="lastname" name="lastname" type="text" />
+      </div>
+    </div>
+  </div>
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+      <div class="nhsuk-form-group">
+        <label class="nhsuk-label" for="address"> Address </label>
+        <input class="nhsuk-input" id="address" name="address" type="text" />
+      </div>
+    </div>
+  </div>
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-one-half">
+      <div class="nhsuk-form-group">
+        <label class="nhsuk-label" for="postcode"> Postcode </label>
+        <input class="nhsuk-input" id="postcode" name="postcode" type="text" />
+      </div>
+    </div>
+
+    <div class="nhsuk-grid-column-one-half">
+      <div class="nhsuk-form-group">
+        <label class="nhsuk-label" for="select-1"> Accommodation type </label>
+        <select
+          class="nhsuk-select hef-select--full-width"
+          id="select-1"
+          name="select-1"
+        >
+          <option value="1">Option 1</option>
+          <option value="2" selected>Option 2</option>
+          <option value="3" disabled>Option 3</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-one-half">
+      <div class="nhsuk-form-group">
+        <label class="nhsuk-label" for="NHSnumber"> NHS number </label>
+        <input
+          class="nhsuk-input"
+          id="NHSnumber"
+          name="NHSnumber"
+          type="text"
+        />
+      </div>
+    </div>
+    <div class="nhsuk-grid-column-one-half">
+      <div class="nhsuk-form-group">
+        <label class="nhsuk-label" for="localID"> Local ID number </label>
+        <input class="nhsuk-input" id="localID" name="localID" type="text" />
+      </div>
+    </div>
+  </div>
+</fieldset>
+
+<fieldset class="nhsuk-fieldset">
+  <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
+    <h1 class="nhsuk-fieldset__heading">Profile of needs</h1>
+  </legend>
+
+  <div class="nhsuk-checkboxes">
+    {% for i in (1..8) %}
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-form-group">
+        {% for j in (1..3) %} {% capture counter %}{{i}}_{{j}}{% endcapture %}
+        <div class="nhsuk-grid-column-one-third">
+          <div class="nhsuk-checkboxes__item">
+            <input
+              class="nhsuk-checkboxes__input"
+              id="example-{{counter}}"
+              name="example"
+              type="checkbox"
+              value=""
+            />
+            <label
+              class="nhsuk-label nhsuk-checkboxes__label"
+              for="example-{{counter}}"
+            >
+              {% if j % 2 == 0 %} Mental Health Illness {% else %} Autism {%
+              endif %}
+            </label>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</fieldset>
+
+<div class="hef-footer-controls">
+  <a class="nhsuk-back-link__link hef-link--back" href="/">
+    <span class="material-symbols-outlined">chevron_left</span>
+    Previous page</a
+  >
+
+  <button class="nhsuk-button nhsuk-button--secondary">
+    Save draft and exit
+  </button>
+  <button class="nhsuk-button">Save patient details</button>
+</div>

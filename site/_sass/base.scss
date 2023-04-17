@@ -15,10 +15,26 @@ body {
 // header
 .nhsuk-header {
   &__logo {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-items: center;
+
     &--offset {
+      a {
+        margin-right: 20px;
+
+        &.nhsuk-header__link--offset {
+          margin-top: -10px;
+
+          svg {
+            height: 60px;
+          }
+        }
+      }
+
       svg {
         top: 0px;
-        position: absolute;
       }
     }
   }
@@ -254,7 +270,33 @@ body {
   }
 }
 
+// forms
+.hef-select {
+  &--full-width {
+    width: 100%;
+  }
+}
+
 // footer controls
 .hef-button-control {
   text-align: right;
+}
+
+.hef-footer-controls {
+  width: 100%;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+
+  button {
+    margin-left: 20px;
+    margin-bottom: 0;
+  }
+
+  .hef-link--back {
+    margin-right: auto;
+    font-size: 24px;
+  }
 }
