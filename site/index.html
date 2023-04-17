@@ -3,10 +3,14 @@ layout: default
 title: 'Home'
 ---
 
+{% include base.html %}
+
 <div class="hef-intro">
   <h1>Welcome back, Gwen</h1>
   <div class="hef-intro__controls">
-    <button class="nhsuk-button">Create new patient</button>
+    <a class="nhsuk-button" href="{{ base }}/patient/create.html"
+      >Create new patient</a
+    >
   </div>
 </div>
 
@@ -44,5 +48,7 @@ title: 'Home'
 </div>
 
 <div class="hef-button-control">
-  <button class="nhsuk-button">Create new patient</button>
+  <a class="nhsuk-button" href="{{ base }}/patient/create.html"
+    >Create new patient</a
+  >
 </div>
