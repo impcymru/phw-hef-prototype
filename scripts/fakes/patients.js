@@ -6,12 +6,12 @@ const total = 100;
 
 const output = {
   headers: [
-    { label: 'Patient ID', key: 'patient_id' },
-    { label: 'Patient Name', key: 'patient_name', width: '200px' },
+    { label: 'ID', key: 'patient_id' },
+    { label: 'Name', key: 'patient_name', width: '200px' },
     { label: 'Birthdate', key: 'birthdate' },
     { label: 'Last Score', key: 'latest_score' },
     { label: 'Practitioner', key: 'practitioner' },
-    { label: 'Last Assessment Date', key: 'last_assessment_date' },
+    { label: 'Last Assessment', key: 'last_assessment_date' },
   ],
   rows: [],
 };

@@ -9,6 +9,8 @@ enum Order {
 
 const Table = (props: BindingProps) => {
   const { rows, headers } = JSON.parse(props.data);
+  const config = JSON.parse(props.config);
+
   const env = new nunjucks.Environment();
   let element = props.domElement;
 
@@ -44,6 +46,7 @@ const Table = (props: BindingProps) => {
       pagination: pagination(),
       sortCol,
       order,
+      selectable: config.selectable || false,
     });
 
     const body = document.createElement('div');

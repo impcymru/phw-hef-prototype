@@ -1,7 +1,9 @@
 <table>
   <thead>
     <tr>
-      {% for header in headers %}
+      {% if selectable %}
+      <th></th>
+      {% endif %} {% for header in headers %}
       <th {% if header.width %}style="width:{{header.width}}" {% endif %}>
         {{ header.label }}
         <button class="hef-table__sort-button" data-sort="{{header.key}}">
@@ -18,7 +20,9 @@
     {% for row in rows %}
 
     <tr>
-      {% for header in headers %}
+      {% if selectable %}
+      <td><input type="checkbox" value="" /></td>
+      {% endif %} {% for header in headers %}
       <td>{{ row[header.key] }}</td>
       {% endfor %}
     </tr>
