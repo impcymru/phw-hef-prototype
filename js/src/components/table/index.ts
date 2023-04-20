@@ -47,6 +47,7 @@ const Table = (props: BindingProps) => {
       sortCol,
       order,
       selectable: config.selectable || false,
+      base: config.base,
     });
 
     const body = document.createElement('div');
