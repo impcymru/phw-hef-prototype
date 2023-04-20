@@ -5,7 +5,7 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <title>Create - PHW Health Equality Framework</title>
+    <title>Scoring - PHW Health Equality Framework</title>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="../assets/css/main.css">
     <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon">
@@ -142,588 +142,113 @@
 
       <main class="nhsuk-main-wrapper " id="maincontent" role="main">
   
-        <h1>Create patient</h1>
+        <div class="nhsuk-card">
+  <div class="nhsuk-card__content">
+    <div class="hef-cardcontrol">
+      <div class="hef-cardcontrol__details">
+        <h2 class="nhsuk-card__heading">Elin Roberts</h2>
+      </div>
 
-<fieldset class="nhsuk-fieldset">
-  <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
-    <h2 class="nhsuk-fieldset__heading">Individual details</h2>
-  </legend>
-
-  <div class="nhsuk-grid-row">
-    <div class="nhsuk-grid-column-one-half">
-      <div class="nhsuk-form-group">
-        <label class="nhsuk-label" for="firstname"> First name </label>
-        <input
-          class="nhsuk-input"
-          id="firstname"
-          name="firstname"
-          type="text"
-        />
+      <div class="hef-cardcontrol__controls hef-cardcontrol__controls--last">
+        <div class="hef-cardcontrol_control hef-cardcontrol_control--inline">
+          <label for="hef-scoring-select">HEF+ Scoring</label>
+          <select
+            class="nhsuk-select"
+            id="hef-scoring-select"
+            name="hef-scoring-select"
+          >
+            <option value="1">First score</option>
+            <option value="2" selected>Last score</option>
+          </select>
+        </div>
       </div>
     </div>
-    <div class="nhsuk-grid-column-one-half">
-      <div class="nhsuk-form-group">
-        <label class="nhsuk-label" for="lastname"> Last name </label>
-        <input class="nhsuk-input" id="lastname" name="lastname" type="text" />
-      </div>
+    <div>
+      <label class="nhsuk-label">Notes about patient</label>
+      <textarea
+        class="nhsuk-textarea"
+        id="example"
+        name="example"
+        rows="2"
+        aria-describedby="example-hint"
+      ></textarea>
     </div>
   </div>
-
-  <div class="nhsuk-grid-row">
-    <div class="nhsuk-grid-column-full">
-      <div class="nhsuk-form-group">
-        <label class="nhsuk-label" for="address"> Address </label>
-        <input class="nhsuk-input" id="address" name="address" type="text" />
-      </div>
-    </div>
-  </div>
-
-  <div class="nhsuk-grid-row">
-    <div class="nhsuk-grid-column-one-half">
-      <div class="nhsuk-form-group">
-        <label class="nhsuk-label" for="postcode"> Postcode </label>
-        <input class="nhsuk-input" id="postcode" name="postcode" type="text" />
-      </div>
-    </div>
-
-    <div class="nhsuk-grid-column-one-half">
-      <div class="nhsuk-form-group">
-        <label class="nhsuk-label" for="select-1"> Accommodation type </label>
-        <select
-          class="nhsuk-select hef-select--full-width"
-          id="select-1"
-          name="select-1"
-        >
-          <option value="1">Option 1</option>
-          <option value="2" selected>Option 2</option>
-          <option value="3" disabled>Option 3</option>
-        </select>
-      </div>
-    </div>
-  </div>
-
-  <div class="nhsuk-grid-row">
-    <div class="nhsuk-grid-column-one-half">
-      <div class="nhsuk-form-group">
-        <label class="nhsuk-label" for="NHSnumber"> NHS number </label>
-        <input
-          class="nhsuk-input"
-          id="NHSnumber"
-          name="NHSnumber"
-          type="text"
-        />
-      </div>
-    </div>
-    <div class="nhsuk-grid-column-one-half">
-      <div class="nhsuk-form-group">
-        <label class="nhsuk-label" for="localID"> Local ID number </label>
-        <input class="nhsuk-input" id="localID" name="localID" type="text" />
-      </div>
-    </div>
-  </div>
-</fieldset>
-
-<fieldset class="nhsuk-fieldset">
-  <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
-    <h1 class="nhsuk-fieldset__heading">Profile of needs</h1>
-  </legend>
-
-  <div class="nhsuk-checkboxes">
-    
-    <div class="nhsuk-grid-row">
-      <div class="nhsuk-form-group">
-         
-        <div class="nhsuk-grid-column-one-third">
-          <div class="nhsuk-checkboxes__item">
-            <input
-              class="nhsuk-checkboxes__input"
-              id="example-1_1"
-              name="example"
-              type="checkbox"
-              value=""
-            />
-            <label
-              class="nhsuk-label nhsuk-checkboxes__label"
-              for="example-1_1"
-            >
-              Mental Health Illness
-            </label>
-          </div>
-        </div>
-         
-        <div class="nhsuk-grid-column-one-third">
-          <div class="nhsuk-checkboxes__item">
-            <input
-              class="nhsuk-checkboxes__input"
-              id="example-1_2"
-              name="example"
-              type="checkbox"
-              value=""
-            />
-            <label
-              class="nhsuk-label nhsuk-checkboxes__label"
-              for="example-1_2"
-            >
-              Mental Health Illness
-            </label>
-          </div>
-        </div>
-         
-        <div class="nhsuk-grid-column-one-third">
-          <div class="nhsuk-checkboxes__item">
-            <input
-              class="nhsuk-checkboxes__input"
-              id="example-1_3"
-              name="example"
-              type="checkbox"
-              value=""
-            />
-            <label
-              class="nhsuk-label nhsuk-checkboxes__label"
-              for="example-1_3"
-            >
-              Mental Health Illness
-            </label>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-    
-    <div class="nhsuk-grid-row">
-      <div class="nhsuk-form-group">
-         
-        <div class="nhsuk-grid-column-one-third">
-          <div class="nhsuk-checkboxes__item">
-            <input
-              class="nhsuk-checkboxes__input"
-              id="example-2_1"
-              name="example"
-              type="checkbox"
-              value=""
-            />
-            <label
-              class="nhsuk-label nhsuk-checkboxes__label"
-              for="example-2_1"
-            >
-              Mental Health Illness
-            </label>
-          </div>
-        </div>
-         
-        <div class="nhsuk-grid-column-one-third">
-          <div class="nhsuk-checkboxes__item">
-            <input
-              class="nhsuk-checkboxes__input"
-              id="example-2_2"
-              name="example"
-              type="checkbox"
-              value=""
-            />
-            <label
-              class="nhsuk-label nhsuk-checkboxes__label"
-              for="example-2_2"
-            >
-              Mental Health Illness
-            </label>
-          </div>
-        </div>
-         
-        <div class="nhsuk-grid-column-one-third">
-          <div class="nhsuk-checkboxes__item">
-            <input
-              class="nhsuk-checkboxes__input"
-              id="example-2_3"
-              name="example"
-              type="checkbox"
-              value=""
-            />
-            <label
-              class="nhsuk-label nhsuk-checkboxes__label"
-              for="example-2_3"
-            >
-              Mental Health Illness
-            </label>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-    
-    <div class="nhsuk-grid-row">
-      <div class="nhsuk-form-group">
-         
-        <div class="nhsuk-grid-column-one-third">
-          <div class="nhsuk-checkboxes__item">
-            <input
-              class="nhsuk-checkboxes__input"
-              id="example-3_1"
-              name="example"
-              type="checkbox"
-              value=""
-            />
-            <label
-              class="nhsuk-label nhsuk-checkboxes__label"
-              for="example-3_1"
-            >
-              Mental Health Illness
-            </label>
-          </div>
-        </div>
-         
-        <div class="nhsuk-grid-column-one-third">
-          <div class="nhsuk-checkboxes__item">
-            <input
-              class="nhsuk-checkboxes__input"
-              id="example-3_2"
-              name="example"
-              type="checkbox"
-              value=""
-            />
-            <label
-              class="nhsuk-label nhsuk-checkboxes__label"
-              for="example-3_2"
-            >
-              Mental Health Illness
-            </label>
-          </div>
-        </div>
-         
-        <div class="nhsuk-grid-column-one-third">
-          <div class="nhsuk-checkboxes__item">
-            <input
-              class="nhsuk-checkboxes__input"
-              id="example-3_3"
-              name="example"
-              type="checkbox"
-              value=""
-            />
-            <label
-              class="nhsuk-label nhsuk-checkboxes__label"
-              for="example-3_3"
-            >
-              Mental Health Illness
-            </label>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-    
-    <div class="nhsuk-grid-row">
-      <div class="nhsuk-form-group">
-         
-        <div class="nhsuk-grid-column-one-third">
-          <div class="nhsuk-checkboxes__item">
-            <input
-              class="nhsuk-checkboxes__input"
-              id="example-4_1"
-              name="example"
-              type="checkbox"
-              value=""
-            />
-            <label
-              class="nhsuk-label nhsuk-checkboxes__label"
-              for="example-4_1"
-            >
-              Mental Health Illness
-            </label>
-          </div>
-        </div>
-         
-        <div class="nhsuk-grid-column-one-third">
-          <div class="nhsuk-checkboxes__item">
-            <input
-              class="nhsuk-checkboxes__input"
-              id="example-4_2"
-              name="example"
-              type="checkbox"
-              value=""
-            />
-            <label
-              class="nhsuk-label nhsuk-checkboxes__label"
-              for="example-4_2"
-            >
-              Mental Health Illness
-            </label>
-          </div>
-        </div>
-         
-        <div class="nhsuk-grid-column-one-third">
-          <div class="nhsuk-checkboxes__item">
-            <input
-              class="nhsuk-checkboxes__input"
-              id="example-4_3"
-              name="example"
-              type="checkbox"
-              value=""
-            />
-            <label
-              class="nhsuk-label nhsuk-checkboxes__label"
-              for="example-4_3"
-            >
-              Mental Health Illness
-            </label>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-    
-    <div class="nhsuk-grid-row">
-      <div class="nhsuk-form-group">
-         
-        <div class="nhsuk-grid-column-one-third">
-          <div class="nhsuk-checkboxes__item">
-            <input
-              class="nhsuk-checkboxes__input"
-              id="example-5_1"
-              name="example"
-              type="checkbox"
-              value=""
-            />
-            <label
-              class="nhsuk-label nhsuk-checkboxes__label"
-              for="example-5_1"
-            >
-              Mental Health Illness
-            </label>
-          </div>
-        </div>
-         
-        <div class="nhsuk-grid-column-one-third">
-          <div class="nhsuk-checkboxes__item">
-            <input
-              class="nhsuk-checkboxes__input"
-              id="example-5_2"
-              name="example"
-              type="checkbox"
-              value=""
-            />
-            <label
-              class="nhsuk-label nhsuk-checkboxes__label"
-              for="example-5_2"
-            >
-              Mental Health Illness
-            </label>
-          </div>
-        </div>
-         
-        <div class="nhsuk-grid-column-one-third">
-          <div class="nhsuk-checkboxes__item">
-            <input
-              class="nhsuk-checkboxes__input"
-              id="example-5_3"
-              name="example"
-              type="checkbox"
-              value=""
-            />
-            <label
-              class="nhsuk-label nhsuk-checkboxes__label"
-              for="example-5_3"
-            >
-              Mental Health Illness
-            </label>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-    
-    <div class="nhsuk-grid-row">
-      <div class="nhsuk-form-group">
-         
-        <div class="nhsuk-grid-column-one-third">
-          <div class="nhsuk-checkboxes__item">
-            <input
-              class="nhsuk-checkboxes__input"
-              id="example-6_1"
-              name="example"
-              type="checkbox"
-              value=""
-            />
-            <label
-              class="nhsuk-label nhsuk-checkboxes__label"
-              for="example-6_1"
-            >
-              Mental Health Illness
-            </label>
-          </div>
-        </div>
-         
-        <div class="nhsuk-grid-column-one-third">
-          <div class="nhsuk-checkboxes__item">
-            <input
-              class="nhsuk-checkboxes__input"
-              id="example-6_2"
-              name="example"
-              type="checkbox"
-              value=""
-            />
-            <label
-              class="nhsuk-label nhsuk-checkboxes__label"
-              for="example-6_2"
-            >
-              Mental Health Illness
-            </label>
-          </div>
-        </div>
-         
-        <div class="nhsuk-grid-column-one-third">
-          <div class="nhsuk-checkboxes__item">
-            <input
-              class="nhsuk-checkboxes__input"
-              id="example-6_3"
-              name="example"
-              type="checkbox"
-              value=""
-            />
-            <label
-              class="nhsuk-label nhsuk-checkboxes__label"
-              for="example-6_3"
-            >
-              Mental Health Illness
-            </label>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-    
-    <div class="nhsuk-grid-row">
-      <div class="nhsuk-form-group">
-         
-        <div class="nhsuk-grid-column-one-third">
-          <div class="nhsuk-checkboxes__item">
-            <input
-              class="nhsuk-checkboxes__input"
-              id="example-7_1"
-              name="example"
-              type="checkbox"
-              value=""
-            />
-            <label
-              class="nhsuk-label nhsuk-checkboxes__label"
-              for="example-7_1"
-            >
-              Mental Health Illness
-            </label>
-          </div>
-        </div>
-         
-        <div class="nhsuk-grid-column-one-third">
-          <div class="nhsuk-checkboxes__item">
-            <input
-              class="nhsuk-checkboxes__input"
-              id="example-7_2"
-              name="example"
-              type="checkbox"
-              value=""
-            />
-            <label
-              class="nhsuk-label nhsuk-checkboxes__label"
-              for="example-7_2"
-            >
-              Mental Health Illness
-            </label>
-          </div>
-        </div>
-         
-        <div class="nhsuk-grid-column-one-third">
-          <div class="nhsuk-checkboxes__item">
-            <input
-              class="nhsuk-checkboxes__input"
-              id="example-7_3"
-              name="example"
-              type="checkbox"
-              value=""
-            />
-            <label
-              class="nhsuk-label nhsuk-checkboxes__label"
-              for="example-7_3"
-            >
-              Mental Health Illness
-            </label>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-    
-    <div class="nhsuk-grid-row">
-      <div class="nhsuk-form-group">
-         
-        <div class="nhsuk-grid-column-one-third">
-          <div class="nhsuk-checkboxes__item">
-            <input
-              class="nhsuk-checkboxes__input"
-              id="example-8_1"
-              name="example"
-              type="checkbox"
-              value=""
-            />
-            <label
-              class="nhsuk-label nhsuk-checkboxes__label"
-              for="example-8_1"
-            >
-              Mental Health Illness
-            </label>
-          </div>
-        </div>
-         
-        <div class="nhsuk-grid-column-one-third">
-          <div class="nhsuk-checkboxes__item">
-            <input
-              class="nhsuk-checkboxes__input"
-              id="example-8_2"
-              name="example"
-              type="checkbox"
-              value=""
-            />
-            <label
-              class="nhsuk-label nhsuk-checkboxes__label"
-              for="example-8_2"
-            >
-              Mental Health Illness
-            </label>
-          </div>
-        </div>
-         
-        <div class="nhsuk-grid-column-one-third">
-          <div class="nhsuk-checkboxes__item">
-            <input
-              class="nhsuk-checkboxes__input"
-              id="example-8_3"
-              name="example"
-              type="checkbox"
-              value=""
-            />
-            <label
-              class="nhsuk-label nhsuk-checkboxes__label"
-              for="example-8_3"
-            >
-              Mental Health Illness
-            </label>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-    
-  </div>
-</fieldset>
-
-<div class="hef-footer-controls">
-  <a class="nhsuk-back-link__link hef-link--back" href="/">
-    <span class="material-symbols-outlined">chevron_left</span>
-    Previous page</a
-  >
-
-  <button class="nhsuk-button nhsuk-button--secondary">
-    Save draft and exit
-  </button>
-  <button class="nhsuk-button">Save patient details</button>
 </div>
+
+
+<h2>Scoring - 1. Social Indicators.</h2>
+
+<p></p>
+
+
+<!-- prettier-ignore-attribute data-component-data -->
+<div
+  data-component="true"
+  data-component-type="accordion"
+  data-component-data='{"title":"A. Accommodation","description":"The quality of living standards for people with learning disabilities can vary widely. When considering accommodation it is important to consider the physical and the social environment. Risks may exist because of the physical environment (extreme damp, unsafe electrics, lack of adaptation around mobility problems etc.), or arise from the social environment (overcrowding, bullying, aggression from others, etc).","options":[{"title":"Accommodation presenting high risk, or in hospital / prison with no discharge accommodation identified or homeless.","description":"This level applies to a person who has no settled accommodation, who may be in temporary short term accommodation with no appropriate move-on accommodation identified, or in accommodation that is directly impacting on their health and wellbeing. This includes those who are living in restrictive settings such as hospitals or prison. There may be serious safeguarding concerns in relation to accommodation."},{"title":"Inappropriate accommodation / accommodation at risk of breakdown.","description":"This level applies where a person is in accommodation which is does not meet to their identified health and social needs; or where the accommodation is fragile and likely to break down (e.g. due to negative relationships with peers / neighbours, lack of suitably skilled support, offending behaviour, or where notice has been served by the accommodation provider)."},{"title":"Shared accommodation with others / family – not by choice.","description":"This level applies where accommodation is shared with others though not either chosen by the individual, or agreed through an appropriate best interest process. Similarly, where individuals continue to live with their family despite the fact that they or their family would prefer independence move to more independent living."},{"title":"Settled single accommodation or shared with self-selected others.","description":"This level applies where a person lives in accommodation either of their choosing or following appropriate best interest processes. This will however be in some form of registered care or where they do not have tenancy rights or full control over their care and / or support."},{"title":"Settled family accommodation or own tenancy / ownership reflecting personal choice.","description":"This level applies where a person is in settled accommodation either of their choosing or following a appropriate best interest process. Either the person themselves of their family have control over their tenancy, care and support."}]}'
+>
+  no js mounted yet...
+</div>
+
+<!-- prettier-ignore-attribute data-component-data -->
+<div
+  data-component="true"
+  data-component-type="accordion"
+  data-component-data='{"title":"B. Employment, meaningful activities and engagement","description":"Being engaged in meaningful activity is not dependent on degree of disability; it will be unique for everyone, what is meaningful for one person may not be meaningful to another. Activity can range from different types of employment, education, training, home or community based activities, and these may be formal or informal. A good measure of meaningfulness is the degree of engagement in the activity. A meaningful activity for someone with profound intellectual and multiple learning disabilities may be massage, or listening to music, for more independent people it may be cooking or attending a club, for others it could be fulltime employment or attendance at a college course of their choice.","options":[{"title":"No meaningful activities / engagement.","description":"This level applies where a person has no meaningful activities or engagement. They will be spending long periods of time with no stimulus or engagement; or they may be engaged in activities that are not meaningful to them. There may be serious safeguarding concerns in relation to levels of activity and engagement."},{"title":"3B Highly restricted activity / engagement levels.","description":"This level applies when a person’s access to meaningful activities is extremely restricted, either for very brief periods or only intermittently available. It may be that very few appropriate activities have been identified. Activities may only be provided within the person’s home environment and there is little or no access the wider community."},{"title":"Limited meaningful activities / engagement.","description":"This level applies where a person has some activities which are meaningful to them, or a range of activities have been identified but nonetheless access to them is limited or unpredictable."},{"title":"Voluntary work or other structured meaningful activity / engagement.","description":"This level applies where a range of meaningful activities are available; they are most likely structured and accessed regularly. There may be a combination of formal and informal activity; or for people who are able to work, opportunities exist for engagement in voluntary employment."},{"title":"In paid employment or education, fully engaged.","description":"This level applies where a person is engaged with a range of meaningful activities that include paid employment or education of their choice and / or engagement in a range of meaningful activities in different environments with different people."}]}'
+>
+  no js mounted yet...
+</div>
+
+<!-- prettier-ignore-attribute data-component-data -->
+<div
+  data-component="true"
+  data-component-type="accordion"
+  data-component-data='{"title":"C. Financial support","description":"The links between financial security and health are clear from the evidence. The majority of people with learning disabilities are in receipt of some sort of benefit, however sometimes there is a sense that finances are inadequate to meet an individual’s needs. Material poverty can affect a person’s ability to take a nutritious diet or to engage in activities within their community. Where entitlements are not taken up or monies are being held back by another party (see safeguarding) this can directly impact on an individual’s health and well being.","options":[{"title":"Minimal or no financial support.","description":"This level applies where a person is in receipt of either no or else very limited financial support. This could be because benefits are not being accessed, have been withdrawn or are being withheld. There may be serious safeguarding concerns in relation to finances."},{"title":"Restricted access to adequate financial support.","description":"This level applies where a person has restricted financial support and / or restricted choice and control over the use of their finances (in the absence of robust best interest decision making processes). This could be because some benefits are not being accessed or access to full entitlements is being restricted."},{"title":"Limited financial support.","description":"This level applies where there is some financial support but of a limited nature and / or limited choice and control over its use (in the absence of robust best interest decision making processes. This could be because entitlement criteria are not met, benefits only cover essential requirements or access to full entitlements is being restricted."},{"title":"Full financial support / benefits accessed.","description":"This level applies where full benefits are accessed and provide adequate financial support with choice and control to maintain a reasonable quality of life.  Sufficient financial support."}]}'
+>
+  no js mounted yet...
+</div>
+
+<!-- prettier-ignore-attribute data-component-data -->
+<div
+  data-component="true"
+  data-component-type="accordion"
+  data-component-data='{"title":"D. Social contact","description":"Social contact can take many forms but is a clear indicator within quality of life measures and health and wellbeing. A strong social network will typically include family and friends though this may be disrupted due to remote and distant placements, lack of financial resource or availability of support. Other important social contacts may include neighbours, people with similar recreational interests or those with similar cultural backgrounds.","options":[{"title":"Minimal or no appropriate social contact.","description":"This level applies where there is very little or no appropriate social contact. This may mean that a person is removed from societal contact and socially isolated, with little or no contact of any sort other than with paid support and others placed in the same service. There may be serious safeguarding concerns in relation to social isolation or the influence of inappropriate social contacts."},{"title":"Restricted levels of social contact.","description":"This level applies where access to appropriate social contact is available but is fragile or is at risk of being lost. This may be for a wide range of reasons including behaviour, living situation, risk, staffing levels etc."},{"title":"Social contact reliant on paid support.","description":"This level applies where some appropriate social contact is maintained but is reliant on paid support. There may be restricted choice and control over social contact."},{"title":"Limited non paid social networks.","description":"This level applies where a person is able to maintain appropriate social contact independently or where social contact is controlled by the person through use of a personal budget or - social contact may however be limited."},{"title":"Wide range of established non paid social networks.","description":"This level applies where a person is in full control of access to a wide range of appropriate social contacts with established social networks."}]}'
+>
+  no js mounted yet...
+</div>
+
+<!-- prettier-ignore-attribute data-component-data -->
+<div
+  data-component="true"
+  data-component-type="accordion"
+  data-component-data='{"title":"E. Additional marginalising factors (such as ethnicity)","description":"This indicator can cover a wide range of issues that can increase an individual’s marginalisation. This can be linked to ethnicity, gender, behaviours, sexuality, appearance, physical features, speech differences etc. etc.","options":[{"title":"Single marginalising factor having major impact or a range or marginalising factors restricting lifestyle.","description":"This level applies where there is a major impact on a person’s quality of life because of marginalising factors in addition to their learning disabilities. This may mean that they are more vulnerable or their life is further restricted to a major degree. There may be serious safeguarding concerns as a result of additional marginalising factors."},{"title":"Additional marginalising factors having significant impact with little support or action being taken.","description":"This level applies where a significant negative impact on a person’s life is experienced because of additional marginalising factors. This may mean that they are not able to do certain preferred activities or lead as full a life as they otherwise would be able or choose to. There is little support or action being taken."},{"title":"Additional marginalising factors having limited impact.","description":"This level applies where there are additional marginalising factors present and these have a limited impact on the person. This may mean they feel more vulnerable or feel less able to do the things they otherwise would be able or choose to do. Some support is in place but may not be appropriate or effective."},{"title":"Minimal additional marginalising factors with no impact; appropriate support is in place and effective.","description":"This level applies where there are additional marginalising factors which are managed and supported in such a way as to have no or minimal impact on the person’s life."},{"title":"No additional marginalising factors.","description":"There are no marginalising factors beyond the learning disabilities."}]}'
+>
+  no js mounted yet...
+</div>
+
+<!-- prettier-ignore-attribute data-component-data -->
+<div
+  data-component="true"
+  data-component-type="accordion"
+  data-component-data='{"title":"F. Safeguarding","description":"The inclusion of safeguarding issues within the framework enables the capture of any issues that may be impacting on the individuals’ safety. Such factors may have been captured within another indicator (financial for example) however this indicator captures the formalisation of such risk areas including hate crime. It also includes issues related to the safety of others including children.","options":[{"title":"Major safeguarding concerns / current abuse or hate crime","description":"This level applies where there are current or major safeguarding issues that need to be, or are being addressed. This may be because of concerns of active abuse or hate crime occurring, or there is an immediate serious risk to the person or others."},{"title":"Significant safeguarding concerns / risk of abuse or hate crime","description":"This level applies where there are major risks that could require a safeguarding response. There may be indications of possible abuse, hate crime or risk to others that require monitoring; there may be a lack of recording, monitoring and transparency in support systems."},{"title":"Limited safeguarding concerns.","description":"This level applies where there are concerns of a safeguarding nature that may impact on the person or others. This could be where the person is in shared accommodation where abuse or hate crime toward another individual has been identified. There may be cultural issues within the support environment which need to be addressed."},{"title":"1F Minimal safeguarding risks.","description":"This level applies where a person may be vulnerable but the current safeguarding or hate crime risks are minimal and there is good monitoring, transparency and recording in place."},{"title":"No safeguarding concerns.","description":"This level applies where there are no current safeguarding or hate crime concerns and any risks are"}]}'
+>
+  no js mounted yet...
+</div>
+ <div class="hef-footer-controls hef-footer-controls--leftright">
+  <a
+    class="nhsuk-button nhsuk-button--secondary hef-button__footer--left"
+    href="./summary.html"
+  >
+    Save draft and exit
+  </a>
+  
+  <a class="nhsuk-button" href="./scoring1.html"
+    >Save and proceed</a
+  >
+  
+</div>
+
 
        
       </main>

@@ -166,8 +166,26 @@ body {
     flex-direction: row;
     justify-content: end;
 
+    &--last {
+      margin-left: auto;
+    }
+
     .hef-cardcontrol_control {
       padding-left: 10px;
+
+      &--inline {
+        display: inline-flex;
+        align-items: center;
+
+        p,
+        label {
+          margin-bottom: 0;
+        }
+
+        select {
+          margin-left: 20px;
+        }
+      }
     }
   }
 }
@@ -290,13 +308,142 @@ body {
   justify-content: end;
   align-items: center;
 
+  &--leftright {
+    justify-content: space-between;
+  }
+
   button {
     margin-left: 20px;
     margin-bottom: 0;
   }
 
+  .hef-button__footer--left {
+    margin-left: 0;
+  }
+
   .hef-link--back {
     margin-right: auto;
     font-size: 24px;
+  }
+}
+
+// expander
+
+.hef-expander {
+  background: white;
+  border: 1px solid $color_nhsuk-grey-3;
+  padding: 20px;
+
+  h3 {
+    margin-bottom: 0;
+    display: inline-flex;
+
+    .check-icon {
+      font-size: 36px;
+      color: $color_nhsuk-green;
+
+      &--hidden {
+        display: none;
+      }
+    }
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+    .icon {
+      margin-left: auto;
+    }
+  }
+
+  &__body {
+  }
+
+  &--closed {
+    .hef-expander__header {
+      margin-bottom: 0;
+    }
+
+    .hef-expander__body {
+      display: none;
+    }
+  }
+}
+
+.hef-sub-expander {
+  margin-bottom: 10px;
+
+  &__body {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+
+  &__content {
+    width: 70%;
+    h5 {
+      display: inline-flex;
+      flex-direction: row;
+      align-items: center;
+      cursor: pointer;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__level {
+    width: 150px;
+    margin-left: auto;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    &--0 {
+      background: #ff0000;
+    }
+
+    &--1 {
+      background: #ff6600;
+    }
+
+    &--2 {
+      background: #ff9900;
+    }
+
+    &--3 {
+      background: #ffc000;
+    }
+
+    &--4 {
+      background: #25db48;
+    }
+  }
+
+  &__select {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    input {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &--closed {
+    .hef-sub-expander__content {
+      p {
+        display: none;
+      }
+
+      h5 {
+        margin-bottom: 0;
+      }
+    }
   }
 }

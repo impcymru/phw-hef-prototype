@@ -1,0 +1,15 @@
+<div class="hef-footer-controls hef-footer-controls--leftright">
+  <a
+    class="nhsuk-button nhsuk-button--secondary hef-button__footer--left"
+    href="./summary.html"
+  >
+    Save draft and exit
+  </a>
+  {% if include.next == "final" %}
+  <a class="nhsuk-button" href="./report.html">Submit</a>
+  {% else %}
+  <a class="nhsuk-button" href="./scoring{{include.next}}.html"
+    >Save and proceed</a
+  >
+  {% endif %}
+</div>

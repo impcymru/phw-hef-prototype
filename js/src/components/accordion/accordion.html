@@ -1,0 +1,39 @@
+<div class="hef-expander hef-expander--closed">
+  <div class="hef-expander__header" data-trigger="true">
+    <h3>
+      {{title}}<span
+        class="material-symbols-outlined check-icon check-icon--hidden"
+        >check</span
+      >
+    </h3>
+    <span class="material-symbols-outlined icon">expand_more</span>
+  </div>
+
+  <div class="hef-expander__body">
+    {% for option in options %}
+    <div class="hef-sub-expander hef-sub-expander--closed">
+      <div class="hef-sub-expander__body">
+        <div class="hef-sub-expander__content">
+          <h5 data-sub-trigger="true">
+            <span class="material-symbols-outlined">expand_more</span>
+            {{option.title}}
+          </h5>
+          <p>{{option.description}}</p>
+        </div>
+        <div
+          class="hef-sub-expander__level hef-sub-expander__level--{{loop.index0}}"
+        >
+          <span
+            >{% if loop.index0 == 0 %}Major{% elif loop.index0 == 1
+            %}Significant{% elif loop.index0 == 2 %}Limited{% elif loop.index0
+            == 3 %}Minimal{% elif loop.index0 == 4 %}None{% endif %}</span
+          >
+        </div>
+        <div class="hef-sub-expander__select">
+          <input data-radio="true" type="radio" name="{{title}}" />
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>

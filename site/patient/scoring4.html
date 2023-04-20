@@ -1,0 +1,21 @@
+---
+layout: default
+title: 'Scoring'
+---
+
+{% include scoringheader.html %}
+
+<h1>Scoring - {{site.data.scoring_4.title}}</h1>
+
+<p>{{site.data.scoring_4.description}}</p>
+
+{% for inner in site.data.scoring_4.inners %}
+<!-- prettier-ignore-attribute data-component-data -->
+<div
+  data-component="true"
+  data-component-type="accordion"
+  data-component-data='{{ inner }}'
+>
+  no js mounted yet...
+</div>
+{% endfor %}{% include scoringfooter.html next="final" %}

@@ -5,7 +5,7 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <title>Create - PHW Health Equality Framework</title>
+    <title>Scoring - PHW Health Equality Framework</title>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="../assets/css/main.css">
     <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon">
@@ -142,588 +142,111 @@
 
       <main class="nhsuk-main-wrapper " id="maincontent" role="main">
   
-        <h1>Create patient</h1>
+        <div class="nhsuk-card">
+  <div class="nhsuk-card__content">
+    <div class="hef-cardcontrol">
+      <div class="hef-cardcontrol__details">
+        <h2 class="nhsuk-card__heading">Elin Roberts</h2>
+      </div>
 
-<fieldset class="nhsuk-fieldset">
-  <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
-    <h2 class="nhsuk-fieldset__heading">Individual details</h2>
-  </legend>
-
-  <div class="nhsuk-grid-row">
-    <div class="nhsuk-grid-column-one-half">
-      <div class="nhsuk-form-group">
-        <label class="nhsuk-label" for="firstname"> First name </label>
-        <input
-          class="nhsuk-input"
-          id="firstname"
-          name="firstname"
-          type="text"
-        />
+      <div class="hef-cardcontrol__controls hef-cardcontrol__controls--last">
+        <div class="hef-cardcontrol_control hef-cardcontrol_control--inline">
+          <label for="hef-scoring-select">HEF+ Scoring</label>
+          <select
+            class="nhsuk-select"
+            id="hef-scoring-select"
+            name="hef-scoring-select"
+          >
+            <option value="1">First score</option>
+            <option value="2" selected>Last score</option>
+          </select>
+        </div>
       </div>
     </div>
-    <div class="nhsuk-grid-column-one-half">
-      <div class="nhsuk-form-group">
-        <label class="nhsuk-label" for="lastname"> Last name </label>
-        <input class="nhsuk-input" id="lastname" name="lastname" type="text" />
-      </div>
+    <div>
+      <label class="nhsuk-label">Notes about patient</label>
+      <textarea
+        class="nhsuk-textarea"
+        id="example"
+        name="example"
+        rows="2"
+        aria-describedby="example-hint"
+      ></textarea>
     </div>
   </div>
-
-  <div class="nhsuk-grid-row">
-    <div class="nhsuk-grid-column-full">
-      <div class="nhsuk-form-group">
-        <label class="nhsuk-label" for="address"> Address </label>
-        <input class="nhsuk-input" id="address" name="address" type="text" />
-      </div>
-    </div>
-  </div>
-
-  <div class="nhsuk-grid-row">
-    <div class="nhsuk-grid-column-one-half">
-      <div class="nhsuk-form-group">
-        <label class="nhsuk-label" for="postcode"> Postcode </label>
-        <input class="nhsuk-input" id="postcode" name="postcode" type="text" />
-      </div>
-    </div>
-
-    <div class="nhsuk-grid-column-one-half">
-      <div class="nhsuk-form-group">
-        <label class="nhsuk-label" for="select-1"> Accommodation type </label>
-        <select
-          class="nhsuk-select hef-select--full-width"
-          id="select-1"
-          name="select-1"
-        >
-          <option value="1">Option 1</option>
-          <option value="2" selected>Option 2</option>
-          <option value="3" disabled>Option 3</option>
-        </select>
-      </div>
-    </div>
-  </div>
-
-  <div class="nhsuk-grid-row">
-    <div class="nhsuk-grid-column-one-half">
-      <div class="nhsuk-form-group">
-        <label class="nhsuk-label" for="NHSnumber"> NHS number </label>
-        <input
-          class="nhsuk-input"
-          id="NHSnumber"
-          name="NHSnumber"
-          type="text"
-        />
-      </div>
-    </div>
-    <div class="nhsuk-grid-column-one-half">
-      <div class="nhsuk-form-group">
-        <label class="nhsuk-label" for="localID"> Local ID number </label>
-        <input class="nhsuk-input" id="localID" name="localID" type="text" />
-      </div>
-    </div>
-  </div>
-</fieldset>
-
-<fieldset class="nhsuk-fieldset">
-  <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
-    <h1 class="nhsuk-fieldset__heading">Profile of needs</h1>
-  </legend>
-
-  <div class="nhsuk-checkboxes">
-    
-    <div class="nhsuk-grid-row">
-      <div class="nhsuk-form-group">
-         
-        <div class="nhsuk-grid-column-one-third">
-          <div class="nhsuk-checkboxes__item">
-            <input
-              class="nhsuk-checkboxes__input"
-              id="example-1_1"
-              name="example"
-              type="checkbox"
-              value=""
-            />
-            <label
-              class="nhsuk-label nhsuk-checkboxes__label"
-              for="example-1_1"
-            >
-              Mental Health Illness
-            </label>
-          </div>
-        </div>
-         
-        <div class="nhsuk-grid-column-one-third">
-          <div class="nhsuk-checkboxes__item">
-            <input
-              class="nhsuk-checkboxes__input"
-              id="example-1_2"
-              name="example"
-              type="checkbox"
-              value=""
-            />
-            <label
-              class="nhsuk-label nhsuk-checkboxes__label"
-              for="example-1_2"
-            >
-              Mental Health Illness
-            </label>
-          </div>
-        </div>
-         
-        <div class="nhsuk-grid-column-one-third">
-          <div class="nhsuk-checkboxes__item">
-            <input
-              class="nhsuk-checkboxes__input"
-              id="example-1_3"
-              name="example"
-              type="checkbox"
-              value=""
-            />
-            <label
-              class="nhsuk-label nhsuk-checkboxes__label"
-              for="example-1_3"
-            >
-              Mental Health Illness
-            </label>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-    
-    <div class="nhsuk-grid-row">
-      <div class="nhsuk-form-group">
-         
-        <div class="nhsuk-grid-column-one-third">
-          <div class="nhsuk-checkboxes__item">
-            <input
-              class="nhsuk-checkboxes__input"
-              id="example-2_1"
-              name="example"
-              type="checkbox"
-              value=""
-            />
-            <label
-              class="nhsuk-label nhsuk-checkboxes__label"
-              for="example-2_1"
-            >
-              Mental Health Illness
-            </label>
-          </div>
-        </div>
-         
-        <div class="nhsuk-grid-column-one-third">
-          <div class="nhsuk-checkboxes__item">
-            <input
-              class="nhsuk-checkboxes__input"
-              id="example-2_2"
-              name="example"
-              type="checkbox"
-              value=""
-            />
-            <label
-              class="nhsuk-label nhsuk-checkboxes__label"
-              for="example-2_2"
-            >
-              Mental Health Illness
-            </label>
-          </div>
-        </div>
-         
-        <div class="nhsuk-grid-column-one-third">
-          <div class="nhsuk-checkboxes__item">
-            <input
-              class="nhsuk-checkboxes__input"
-              id="example-2_3"
-              name="example"
-              type="checkbox"
-              value=""
-            />
-            <label
-              class="nhsuk-label nhsuk-checkboxes__label"
-              for="example-2_3"
-            >
-              Mental Health Illness
-            </label>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-    
-    <div class="nhsuk-grid-row">
-      <div class="nhsuk-form-group">
-         
-        <div class="nhsuk-grid-column-one-third">
-          <div class="nhsuk-checkboxes__item">
-            <input
-              class="nhsuk-checkboxes__input"
-              id="example-3_1"
-              name="example"
-              type="checkbox"
-              value=""
-            />
-            <label
-              class="nhsuk-label nhsuk-checkboxes__label"
-              for="example-3_1"
-            >
-              Mental Health Illness
-            </label>
-          </div>
-        </div>
-         
-        <div class="nhsuk-grid-column-one-third">
-          <div class="nhsuk-checkboxes__item">
-            <input
-              class="nhsuk-checkboxes__input"
-              id="example-3_2"
-              name="example"
-              type="checkbox"
-              value=""
-            />
-            <label
-              class="nhsuk-label nhsuk-checkboxes__label"
-              for="example-3_2"
-            >
-              Mental Health Illness
-            </label>
-          </div>
-        </div>
-         
-        <div class="nhsuk-grid-column-one-third">
-          <div class="nhsuk-checkboxes__item">
-            <input
-              class="nhsuk-checkboxes__input"
-              id="example-3_3"
-              name="example"
-              type="checkbox"
-              value=""
-            />
-            <label
-              class="nhsuk-label nhsuk-checkboxes__label"
-              for="example-3_3"
-            >
-              Mental Health Illness
-            </label>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-    
-    <div class="nhsuk-grid-row">
-      <div class="nhsuk-form-group">
-         
-        <div class="nhsuk-grid-column-one-third">
-          <div class="nhsuk-checkboxes__item">
-            <input
-              class="nhsuk-checkboxes__input"
-              id="example-4_1"
-              name="example"
-              type="checkbox"
-              value=""
-            />
-            <label
-              class="nhsuk-label nhsuk-checkboxes__label"
-              for="example-4_1"
-            >
-              Mental Health Illness
-            </label>
-          </div>
-        </div>
-         
-        <div class="nhsuk-grid-column-one-third">
-          <div class="nhsuk-checkboxes__item">
-            <input
-              class="nhsuk-checkboxes__input"
-              id="example-4_2"
-              name="example"
-              type="checkbox"
-              value=""
-            />
-            <label
-              class="nhsuk-label nhsuk-checkboxes__label"
-              for="example-4_2"
-            >
-              Mental Health Illness
-            </label>
-          </div>
-        </div>
-         
-        <div class="nhsuk-grid-column-one-third">
-          <div class="nhsuk-checkboxes__item">
-            <input
-              class="nhsuk-checkboxes__input"
-              id="example-4_3"
-              name="example"
-              type="checkbox"
-              value=""
-            />
-            <label
-              class="nhsuk-label nhsuk-checkboxes__label"
-              for="example-4_3"
-            >
-              Mental Health Illness
-            </label>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-    
-    <div class="nhsuk-grid-row">
-      <div class="nhsuk-form-group">
-         
-        <div class="nhsuk-grid-column-one-third">
-          <div class="nhsuk-checkboxes__item">
-            <input
-              class="nhsuk-checkboxes__input"
-              id="example-5_1"
-              name="example"
-              type="checkbox"
-              value=""
-            />
-            <label
-              class="nhsuk-label nhsuk-checkboxes__label"
-              for="example-5_1"
-            >
-              Mental Health Illness
-            </label>
-          </div>
-        </div>
-         
-        <div class="nhsuk-grid-column-one-third">
-          <div class="nhsuk-checkboxes__item">
-            <input
-              class="nhsuk-checkboxes__input"
-              id="example-5_2"
-              name="example"
-              type="checkbox"
-              value=""
-            />
-            <label
-              class="nhsuk-label nhsuk-checkboxes__label"
-              for="example-5_2"
-            >
-              Mental Health Illness
-            </label>
-          </div>
-        </div>
-         
-        <div class="nhsuk-grid-column-one-third">
-          <div class="nhsuk-checkboxes__item">
-            <input
-              class="nhsuk-checkboxes__input"
-              id="example-5_3"
-              name="example"
-              type="checkbox"
-              value=""
-            />
-            <label
-              class="nhsuk-label nhsuk-checkboxes__label"
-              for="example-5_3"
-            >
-              Mental Health Illness
-            </label>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-    
-    <div class="nhsuk-grid-row">
-      <div class="nhsuk-form-group">
-         
-        <div class="nhsuk-grid-column-one-third">
-          <div class="nhsuk-checkboxes__item">
-            <input
-              class="nhsuk-checkboxes__input"
-              id="example-6_1"
-              name="example"
-              type="checkbox"
-              value=""
-            />
-            <label
-              class="nhsuk-label nhsuk-checkboxes__label"
-              for="example-6_1"
-            >
-              Mental Health Illness
-            </label>
-          </div>
-        </div>
-         
-        <div class="nhsuk-grid-column-one-third">
-          <div class="nhsuk-checkboxes__item">
-            <input
-              class="nhsuk-checkboxes__input"
-              id="example-6_2"
-              name="example"
-              type="checkbox"
-              value=""
-            />
-            <label
-              class="nhsuk-label nhsuk-checkboxes__label"
-              for="example-6_2"
-            >
-              Mental Health Illness
-            </label>
-          </div>
-        </div>
-         
-        <div class="nhsuk-grid-column-one-third">
-          <div class="nhsuk-checkboxes__item">
-            <input
-              class="nhsuk-checkboxes__input"
-              id="example-6_3"
-              name="example"
-              type="checkbox"
-              value=""
-            />
-            <label
-              class="nhsuk-label nhsuk-checkboxes__label"
-              for="example-6_3"
-            >
-              Mental Health Illness
-            </label>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-    
-    <div class="nhsuk-grid-row">
-      <div class="nhsuk-form-group">
-         
-        <div class="nhsuk-grid-column-one-third">
-          <div class="nhsuk-checkboxes__item">
-            <input
-              class="nhsuk-checkboxes__input"
-              id="example-7_1"
-              name="example"
-              type="checkbox"
-              value=""
-            />
-            <label
-              class="nhsuk-label nhsuk-checkboxes__label"
-              for="example-7_1"
-            >
-              Mental Health Illness
-            </label>
-          </div>
-        </div>
-         
-        <div class="nhsuk-grid-column-one-third">
-          <div class="nhsuk-checkboxes__item">
-            <input
-              class="nhsuk-checkboxes__input"
-              id="example-7_2"
-              name="example"
-              type="checkbox"
-              value=""
-            />
-            <label
-              class="nhsuk-label nhsuk-checkboxes__label"
-              for="example-7_2"
-            >
-              Mental Health Illness
-            </label>
-          </div>
-        </div>
-         
-        <div class="nhsuk-grid-column-one-third">
-          <div class="nhsuk-checkboxes__item">
-            <input
-              class="nhsuk-checkboxes__input"
-              id="example-7_3"
-              name="example"
-              type="checkbox"
-              value=""
-            />
-            <label
-              class="nhsuk-label nhsuk-checkboxes__label"
-              for="example-7_3"
-            >
-              Mental Health Illness
-            </label>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-    
-    <div class="nhsuk-grid-row">
-      <div class="nhsuk-form-group">
-         
-        <div class="nhsuk-grid-column-one-third">
-          <div class="nhsuk-checkboxes__item">
-            <input
-              class="nhsuk-checkboxes__input"
-              id="example-8_1"
-              name="example"
-              type="checkbox"
-              value=""
-            />
-            <label
-              class="nhsuk-label nhsuk-checkboxes__label"
-              for="example-8_1"
-            >
-              Mental Health Illness
-            </label>
-          </div>
-        </div>
-         
-        <div class="nhsuk-grid-column-one-third">
-          <div class="nhsuk-checkboxes__item">
-            <input
-              class="nhsuk-checkboxes__input"
-              id="example-8_2"
-              name="example"
-              type="checkbox"
-              value=""
-            />
-            <label
-              class="nhsuk-label nhsuk-checkboxes__label"
-              for="example-8_2"
-            >
-              Mental Health Illness
-            </label>
-          </div>
-        </div>
-         
-        <div class="nhsuk-grid-column-one-third">
-          <div class="nhsuk-checkboxes__item">
-            <input
-              class="nhsuk-checkboxes__input"
-              id="example-8_3"
-              name="example"
-              type="checkbox"
-              value=""
-            />
-            <label
-              class="nhsuk-label nhsuk-checkboxes__label"
-              for="example-8_3"
-            >
-              Mental Health Illness
-            </label>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-    
-  </div>
-</fieldset>
-
-<div class="hef-footer-controls">
-  <a class="nhsuk-back-link__link hef-link--back" href="/">
-    <span class="material-symbols-outlined">chevron_left</span>
-    Previous page</a
-  >
-
-  <button class="nhsuk-button nhsuk-button--secondary">
-    Save draft and exit
-  </button>
-  <button class="nhsuk-button">Save patient details</button>
 </div>
+
+
+<h1>Scoring - 5. Deficiencies in Service Quality and Access Indicators.</h1>
+
+<p></p>
+
+
+<!-- prettier-ignore-attribute data-component-data -->
+<div
+  data-component="true"
+  data-component-type="accordion"
+  data-component-data='{"title":"A. Organisational barriers","description":"There are a wide range of organisational barriers to accessing healthcare and other services. Some services are scarce and there may be eligibility criteria preventing access. It is not always easy for people to physically access services e.g. they may be in a location that is far away and transport may be a problem. Services often do not understand / or recognise the need to make ‘Reasonable Adjustments’. Generic health care staff often lack knowledge, skills and confidence, and on occasion, has negative attitudes in relation to caring for people who have learning disabilities. This can lead to diagnostic overshadowing.","options":[{"title":"Major restrictions in the quality of or access to services associated with organisational barriers completely preventing access.","description":"This level applies where there are major difficulties resulting from an organisation’s complete lack of understanding and awareness about the nature of learning disabilities, there is a complete lack of recognition of diagnostic overshadowing and no evidence of reasonable adjustments. Services are refused or inaccessible, Treatment or intervention is withheld, delayed or inappropriate. There is no support to access or even register with services. There may be serious safeguarding concerns in relation to organisational barriers to services."},{"title":"Significant restrictions in the quality of or access to services associated with organisational barriers.","description":"This level applies where there are significant difficulties resulting from an organisation’s limited understanding and awareness about the nature of learning disabilities, There is poor recognition of diagnostic overshadowing and limited evidence of reasonable adjustments. Service provision is inadequate or difficult to access. There is very little support to access services Treatment or intervention is delayed. There is no training available."},{"title":"Limited restrictions in the quality of or access to services associated with organisational barriers.","description":"This level applies where there are some difficulties associated with organisational barriers. The understanding and awareness of those providing support about the nature of learning disabilities, the recognition of diagnostic overshadowing and importance or reasonable adjustments is inconsistent. Some training or support will be in place, but services are inadequate or treatment or intervention may be delayed. There is limited support to access services."},{"title":"Minimal restrictions in the quality of or access to services associated with organisational barriers.","description":"This level applies where there are minimal difficulties associated with organisational barriers. The organisation shows a good understanding and awareness about the nature of learning disabilities, the recognition of diagnostic overshadowing and importance or reasonable adjustments. Training is in place for staff, although this is not mandatory and some staff have not been trained leading to some inadequacy and inconsistency in service provision. There is some support to access services."},{"title":"No identified restrictions in the quality of or access to services associated with organisational barriers.","description":"This level applies where there are no difficulties associated with organisational barriers. The organisation shows a good understanding and awareness about the nature of learning disabilities, the recognition of diagnostic overshadowing and importance or reasonable adjustments. Mandatory learning disability training is in place for staff. There is adequate support to access services."}]}'
+>
+  no js mounted yet...
+</div>
+
+<!-- prettier-ignore-attribute data-component-data -->
+<div
+  data-component="true"
+  data-component-type="accordion"
+  data-component-data='{"title":"B. Consent","description":"People with learning disabilities may or may not have capacity to give consent and capacity may vary. Sometimes professionals do not take the time to gain consent from the person with the learning disability, even if they may have capacity, consulting the person’s carer or family member instead. Understanding of the mental capacity act or other appropriate national legislation can be limited and appropriate best interest processes are not always followed when making decisions for those who lack capacity. Training is not always available or accessed.","options":[{"title":"Consent or best interest process not in place or not being implemented.","description":"This level applies where there are major difficulties resulting from unlawful practices in not assessing capacity gaining consent, or in not following appropriate best interest or deprivation of liberty (DoLS) processes. No training is in place. There may be serious safeguarding concerns in relation to consent."},{"title":"3B Consent or best interest processes in place but being ignored or wrongly applied.","description":"This level applies where there are significant difficulties resulting from unlawful and / or inappropriate practices in not assessing capacity and gaining consent, or in not following appropriate best interest or deprivation of liberty (DoLS) processes. No training in place."},{"title":"Consent and best interest processes in place and being applied but not consistently.","description":"This level applies where there are difficulties resulting from inconsistency in assessing capacity and gaining consent, or in following appropriate best interest or deprivation of liberty (DoLS) processes. Training is in place but is not mandatory."},{"title":"Consent and best interest processes in place and generally being applied effectively.","description":"This level applies where there are minimal difficulties resulting from inconsistency in assessing capacity and gaining consent, or in following appropriate best interest or deprivation of liberty (DoLS) processes. Mandatory training is in place."},{"title":"Consent and best interest processes are robust and rigorously applied.","description":"This level applies where there are no difficulties related to consent issues. There are good practices in place for assessing capacity and gaining consent, and in following appropriate best interest approaches or deprivation of liberty (DoLS) processes. Mandatory training is in place monitored and fully complied with."}]}'
+>
+  no js mounted yet...
+</div>
+
+<!-- prettier-ignore-attribute data-component-data -->
+<div
+  data-component="true"
+  data-component-type="accordion"
+  data-component-data='{"title":"C. Transitions between services","description":"Transition between services is often reported as problematic for some people with learning disability; this may for example include transition from children’s services to adult or adult to older people’s services, but equally could be transition between hospital services and home or community services, or transitions from one phase of education to another. Common problems include poor planning, variable and mismatched eligibility criteria, lack of clarity from professionals and poor co-ordination between services, together with low levels of satisfaction among family carers","options":[{"title":"Complete breakdown in transition between services.","description":"This level applies where there are major difficulties resulting from poor practices in transition processes. There will be no named coordinator to enable transition and policies protocols will be non-existent or completely inadequate. This may result in no appropriate service or completely unsafe services being provided and serious delays in the effective transition of services. There may be serious safeguarding concerns in relation to transition between services."},{"title":"Significant breakdown in transition between services.","description":"This level applies where there are significant difficulties resulting from poor practices in transition processes. There will be very little coordination available to support transition; policies protocols are inadequate, ineffective and require updating This results in unsafe or inadequate services being provided and significant delays in the effective transition of services."},{"title":"Transition between services is delayed or disrupted.","description":"This level applies where there are limited difficulties resulting from poor practices in transition processes. There may be a named coordinator available to support transition but the role may not be effective; policies protocols require updating This may result in unsafe or inadequate services being provided and delays in the effective transition of services."},{"title":"Transition between services is successful with additional support.","description":"This level applies where there are minimal difficulties resulting from transition processes. There will be a named coordinator available to support transition, policies/ protocols are current. Local services may have some limitations resulting in occasional delays in the effective transition of services requiring additional support."},{"title":"Transition between services is successful with no additional support required.","description":"This level applies where there are no identified difficulties related to transition processes. There will be a named coordinator available to support transition, policies/ protocols are current. Local services are well placed to ensure smooth and effective transition pathways no additional support is required."}]}'
+>
+  no js mounted yet...
+</div>
+
+<!-- prettier-ignore-attribute data-component-data -->
+<div
+  data-component="true"
+  data-component-type="accordion"
+  data-component-data='{"title":"D. Health screening / promotion","description":"Access to health promotion may be significantly poorer for people with more severe learning disabilities and people with learning disabilities who do not use learning disability services. In particular people are less likely to access assessment for vision or hearing impairments; routine dental care; cervical smear tests undertake breast self- examinations or attend for mammography. Sometimes care staff are not sufficiently trained and have limited skills to effectively engage people with learning disabilities in health promotion activities and many don’t know important relevant information such as a person’s family history.","options":[{"title":"Major restrictions in the or quality of or access to health promotion / screening.","description":"This level applies where health screening / promotion programmes and activities are not available to meet identified needs. This may be because there is a lack of service provision or support or that access is being denied or withheld. Those providing support have no training and skills to promote and support good health. There may be serious safeguarding concerns in relation to health screening or health promotion."},{"title":"Significant restrictions in the quality of or access to health promotion / screening.","description":"This level applies where some health screening / promotion programmes and activities are available but access or support may be restricted, delayed or not available. It is likely that no reasonable adjustments are in place. Those providing support have very little training or skills to promote and support good health. There may be areas of identified need that are not being met."},{"title":"Limited restrictions in the quality of or access to health promotion / screening.","description":"This level applies where health screening / promotion programmes and activities are being provided but there are limitations in the scope of the service or support available and the degree or effectiveness of reasonable adjustments Those providing support have limited training and skills to promote and support good health."},{"title":"Minimal restrictions in the quality of or access to health promotion / screening.","description":"This level applies where health screening / promotion programmes and activities are available to meet identified needs and are being accessed with minimal restrictions. There are some accessible materials, Those providing support have some training and skills to promote and support good health. Reasonable adjustments are negotiated and implemented."},{"title":"No identified restrictions in the quality of or access to health screening / promotion.","description":"This level applies where there is full access and support to health screening / promotion programmes and activities. There are accessible materials, and person centred reasonable adjustments. Those providing support are adequately trained and skilled to promote and support good health."}]}'
+>
+  no js mounted yet...
+</div>
+
+<!-- prettier-ignore-attribute data-component-data -->
+<div
+  data-component="true"
+  data-component-type="accordion"
+  data-component-data='{"title":"E. Primary / secondary care","description":"People who have learning disabilities may access primary and secondary health care less frequently than the general population for screening, assessment, treatment and other interventions. Annual health checks including health screening should be conducted by primary care; and follow up and treatment provided appropriately to ensure health needs are met in a timely manner. All health services should be ensuring reasonable adjustments are made to enable access to the same health outcomes as would be expected for people who do not have learning disabilities.","options":[{"title":"Major restrictions in the quality of / or access to primary / secondary care.","description":"This level applies where a primary / secondary care service is not available to meet identified needs. This may be because there is a lack of service provision locally or that access or support is being denied, or withheld. There may be serious safeguarding concerns in relation to primary or secondary health care services."},{"title":"Significant restrictions in the quality of / or access to primary / secondary care.","description":"This level applies where some primary / secondary care service is available to meet identified needs but access or support may be restricted, delayed or not available locally. It is likely that no reasonable adjustments are in place. There may be areas of identified need that are not being met."},{"title":"Limited restrictions in the quality of / or access to primary / secondary care.","description":"This level applies where a limited primary / secondary care service is available locally to meet identified needs and is being provided but there are limitations in the scope of the service or support available and the degree or effectiveness of reasonable adjustments."},{"title":"Minimal restrictions in the quality of / or access to primary / secondary care.","description":"This level applies where a full high quality primary / secondary care service is available to meet identified needs and is being accessed with appropriate support and minimal restrictions. Reasonable adjustments are negotiated and implemented."},{"title":"No identified restrictions in the quality of or access to primary / secondary care.","description":"This level applies where a full high quality primary / secondary care service is available to meet identified needs and is being accessed with no restrictions. Reasonable adjustments are in place and person centred."}]}'
+>
+  no js mounted yet...
+</div>
+
+<!-- prettier-ignore-attribute data-component-data -->
+<div
+  data-component="true"
+  data-component-type="accordion"
+  data-component-data='{"title":"F. Non health Services","description":"Wellbeing, health and quality of life are influenced by services other than health services including for example social care, education, employment, housing, transport and leisure services; this may be especially true for people with learning disabilities who may be regular users of these services. All public services should be ensuring reasonable adjustments are made to enable access and equal outcomes as would be expected for people who do not have learning disabilities.","options":[{"title":"Major restrictions in the quality of or access to non-health services.","description":"This level applies where a (non-health) service is not available to meet identified needs. This may be because there is a lack of service provision locally or that access or support is being denied or withheld. There may be serious safeguarding concerns in relation to non-health services."},{"title":"Significant restrictions in the quality of or access to non-health services.","description":"This level applies where some (non-health) service is available to meet identified needs but access or support may be restricted, delayed or not available locally. It is likely that no reasonable adjustments are in place. There may be areas of identified need that are not being met."},{"title":"Limited restrictions in the quality of or access to non-health services.","description":"This level applies where a limited (non-health) service is available locally and being provided to meet identified needs but there are limitations in the scope of the service or support available and the degree or effectiveness of reasonable adjustments."},{"title":"Minimal restrictions in the quality of or access to non-health services.","description":"This level applies where a full high quality non-health service is available to meet identified needs and is being accessed as required with appropriate support and minimal restrictions. Reasonable adjustments are negotiated and implemented."},{"title":"No identified restrictions in the quality of or access to non-health services.","description":"This level applies where a full high quality (non-health) service is available to meet identified needs and is being accessed as required with no restrictions. Reasonable adjustments are in place and person centred."}]}'
+>
+  no js mounted yet...
+</div>
+<div class="hef-footer-controls hef-footer-controls--leftright">
+  <a
+    class="nhsuk-button nhsuk-button--secondary hef-button__footer--left"
+    href="./summary.html"
+  >
+    Save draft and exit
+  </a>
+  
+  <a class="nhsuk-button" href="./report.html">Submit</a>
+  
+</div>
+
 
        
       </main>
