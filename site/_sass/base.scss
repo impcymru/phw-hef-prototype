@@ -105,6 +105,43 @@ body {
   }
 }
 
+// language switcher
+.hef-language-select {
+  display: inline;
+  color: white;
+  margin-top: -12px;
+
+  ul {
+    float: right;
+    margin-bottom: 0;
+
+    li {
+      display: inline-block;
+      font-size: 16px;
+      margin-bottom: 0;
+
+      &:first-child {
+        &::after {
+          border-right: 0.09375em solid white;
+          content: '';
+          display: inline-block;
+          height: 1em;
+          position: relative;
+          top: 0.1875em;
+        }
+      }
+
+      a {
+        color: white;
+      }
+    }
+  }
+
+  .govuk-visually-hidden {
+    display: none;
+  }
+}
+
 //body {
 .nhsuk-main-wrapper {
   min-height: calc(100vh - 180px);

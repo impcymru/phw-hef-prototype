@@ -53,13 +53,33 @@
 
 <div class="hef-menu" data-component="true" data-component-type="mainmenu">
   <div class="hef-menu__links">
+    <nav class="hef-language-select" aria-label="Language switcher">
+      <ul class="hef-language-select__list">
+        <li class="hef-language-select__list-item">
+          <span aria-current="true">English</span>
+        </li>
+        <li class="hef-language-select__list-item">
+          <a
+            href="?cy"
+            hreflang="cy"
+            lang="cy"
+            rel="alternate"
+            class="govuk-link"
+            data-journey-click="link - click:lang-select:Cymraeg"
+          >
+            <span class="govuk-visually-hidden">Newid yr iaith ir Gymraeg</span>
+            <span aria-hidden="true">Cymraeg</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
     <a class="hef-menu__link" href="/"
       ><span class="material-symbols-outlined smaller">notifications</span></a
     >
 
-    <a class="hef-menu__link" href="/"
+    <!-- <a class="hef-menu__link" href="/"
       ><span class="material-symbols-outlined smaller">language</span></a
-    >
+    >-->
 
     <a class="hef-menu__link" data-trigger="true" href="/">
       <span class="material-symbols-outlined">menu</span>
