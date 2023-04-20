@@ -7604,8 +7604,22 @@ body {
   flex-direction: row;
   justify-content: end;
 }
+.hef-cardcontrol__controls--last {
+  margin-left: auto;
+}
 .hef-cardcontrol__controls .hef-cardcontrol_control {
   padding-left: 10px;
+}
+.hef-cardcontrol__controls .hef-cardcontrol_control--inline {
+  display: inline-flex;
+  align-items: center;
+}
+.hef-cardcontrol__controls .hef-cardcontrol_control--inline p,
+.hef-cardcontrol__controls .hef-cardcontrol_control--inline label {
+  margin-bottom: 0;
+}
+.hef-cardcontrol__controls .hef-cardcontrol_control--inline select {
+  margin-left: 20px;
 }
 
 .hef-dialog__wrapper {
@@ -7697,9 +7711,15 @@ body {
   justify-content: end;
   align-items: center;
 }
+.hef-footer-controls--leftright {
+  justify-content: space-between;
+}
 .hef-footer-controls button {
   margin-left: 20px;
   margin-bottom: 0;
+}
+.hef-footer-controls .hef-button__footer--left {
+  margin-left: 0;
 }
 .hef-footer-controls .hef-link--back {
   margin-right: auto;

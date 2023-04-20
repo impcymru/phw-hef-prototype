@@ -166,8 +166,26 @@ body {
     flex-direction: row;
     justify-content: end;
 
+    &--last {
+      margin-left: auto;
+    }
+
     .hef-cardcontrol_control {
       padding-left: 10px;
+
+      &--inline {
+        display: inline-flex;
+        align-items: center;
+
+        p,
+        label {
+          margin-bottom: 0;
+        }
+
+        select {
+          margin-left: 20px;
+        }
+      }
     }
   }
 }
@@ -290,9 +308,17 @@ body {
   justify-content: end;
   align-items: center;
 
+  &--leftright {
+    justify-content: space-between;
+  }
+
   button {
     margin-left: 20px;
     margin-bottom: 0;
+  }
+
+  .hef-button__footer--left {
+    margin-left: 0;
   }
 
   .hef-link--back {

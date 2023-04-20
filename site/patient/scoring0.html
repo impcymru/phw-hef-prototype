@@ -3,7 +3,9 @@ layout: default
 title: 'Scoring'
 ---
 
-<h1>Scoring - {{site.data.scoring_0.title}}</h1>
+{% include scoringheader.html %}
+
+<h2>Scoring - {{site.data.scoring_0.title}}</h2>
 
 <p>{{site.data.scoring_0.description}}</p>
 
@@ -16,4 +18,4 @@ title: 'Scoring'
 >
   no js mounted yet...
 </div>
-{% endfor %}
+{% endfor %} {% include scoringfooter.html next="1" %}

@@ -3,11 +3,13 @@ layout: default
 title: 'Scoring'
 ---
 
-<h1>Scoring - {{site.data.scoring_0.title}}</h1>
+{% include scoringheader.html %}
 
-<p>{{site.data.scoring_0.description}}</p>
+<h1>Scoring - {{site.data.scoring_1.title}}</h1>
 
-{% for inner in site.data.scoring_0.inners %}
+<p>{{site.data.scoring_1.description}}</p>
+
+{% for inner in site.data.scoring_1.inners %}
 <!-- prettier-ignore-attribute data-component-data -->
 <div
   data-component="true"
@@ -16,4 +18,4 @@ title: 'Scoring'
 >
   no js mounted yet...
 </div>
-{% endfor %}
+{% endfor %}{% include scoringfooter.html next="2" %}
