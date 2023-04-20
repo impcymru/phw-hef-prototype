@@ -7807,6 +7807,9 @@ body {
   cursor: pointer;
   margin-bottom: 16px;
 }
+.hef-sub-expander__content h5 span {
+  margin-right: 10px;
+}
 .hef-sub-expander__level {
   width: 150px;
   margin-left: auto;
