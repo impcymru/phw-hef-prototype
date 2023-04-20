@@ -23,7 +23,13 @@
       {% if selectable %}
       <td><input data-select="true" type="checkbox" value="" /></td>
       {% endif %} {% for header in headers %}
-      <td>{{ row[header.key] }}</td>
+      <td>
+        {% if header.link %}
+        <a href="/{{base}}/{{header.link}}?p={{row[header.linkVal]}}">
+          {{ row[header.key] }}</a
+        >
+        {% else %} <span>{{ row[header.key] }}</span> {% endif %}
+      </td>
       {% endfor %}
     </tr>
 

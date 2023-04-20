@@ -4,11 +4,12 @@ title: 'Patients'
 data: '{"name": "dave"}'
 ---
 
+{% include base.html %}
 <!-- prettier-ignore-attribute data-component-data -->
 <div
   class="hef-table"
   data-component="true"
   data-component-type="table"
   data-component-data='{{ site.data.patients.patients }}'
-  data-component-config='{"selectable": true}'
+  data-component-config='{"selectable": true, "base": "{{base}}/phw-hef-prototype"}'
 ></div>
