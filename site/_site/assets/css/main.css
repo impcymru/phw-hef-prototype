@@ -7557,6 +7557,35 @@ body {
 .hef-menu__container--open {
   right: 0px;
 }
+.hef-language-select {
+  display: inline;
+  color: white;
+  margin-top: -12px;
+}
+.hef-language-select ul {
+  float: right;
+  margin-bottom: 0;
+}
+.hef-language-select ul li {
+  display: inline-block;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+.hef-language-select ul li:first-child::after {
+  border-right: 0.09375em solid white;
+  content: "";
+  display: inline-block;
+  height: 1em;
+  position: relative;
+  top: 0.1875em;
+}
+.hef-language-select ul li a {
+  color: white;
+}
+.hef-language-select .govuk-visually-hidden {
+  display: none;
+}
+
 .nhsuk-main-wrapper {
   min-height: calc(100vh - 180px);
 }
