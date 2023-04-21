@@ -7625,9 +7625,6 @@ body {
   display: flex;
   flex-direction: row;
 }
-.hef-cardcontrol--padded {
-  padding: 32px;
-}
 .hef-cardcontrol__details {
   width: 60%;
 }
