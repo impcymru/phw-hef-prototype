@@ -47,6 +47,7 @@ const Table = (props: BindingProps) => {
       sortCol,
       order,
       selectable: config.selectable || false,
+      base: 'phw-hef-prototype',
     });
 
     const body = document.createElement('div');
