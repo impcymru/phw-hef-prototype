@@ -1,6 +1,103 @@
 ---
 layout: default
-title: "Compare"
+title: 'Compare'
 ---
 
 <h1>Compare</h1>
+
+<div class="hef-block-separator">
+  <div class="nhsuk-card nhsuk-card--clickable">
+    {% include reportheader.html %}
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-one-half">
+        <!-- prettier-ignore-attribute data-component-data -->
+        <div
+          data-component="true"
+          data-component-type="radarchart"
+          data-component-data='{{site.data.totals.value}}'
+        ></div>
+      </div>
+
+      <div class="nhsuk-grid-column-one-quarter">
+        <div class="hef-vert-block">
+          <h6>Average HEF score</h6>
+          <p class="nhsuk-card__description hef-standout">58%</p>
+          <p>Latest 21/4/2023<br />5th HEF Score</p>
+        </div>
+      </div>
+      <div class="nhsuk-grid-column-one-quarter">
+        <div class="hef-vert-block">
+          <h6>Compare</h6>
+          <p class="nhsuk-card__description hef-standout">72%</p>
+          <p>Historic 21/2/2023<br />4th HEF Score</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-one-half">
+    <p>Social</p>
+    <!-- prettier-ignore-attribute data-component-data -->
+    <div
+      data-component="true"
+      data-component-type="barchart"
+      data-component-data='{{site.data.report_0.value}}'
+    ></div>
+  </div>
+
+  <div class="nhsuk-grid-column-one-half">
+    <p>Behaviour</p>
+    <!-- prettier-ignore-attribute data-component-data -->
+    <div
+      data-component="true"
+      data-component-type="barchart"
+      data-component-data='{{site.data.report_1.value}}'
+    ></div>
+  </div>
+</div>
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-one-half">
+    <p>Genetic</p>
+    <!-- prettier-ignore-attribute data-component-data -->
+    <div
+      data-component="true"
+      data-component-type="barchart"
+      data-component-data='{{site.data.report_2 .value}}'
+    ></div>
+  </div>
+
+  <div class="nhsuk-grid-column-one-half">
+    <p>Communication</p>
+    <!-- prettier-ignore-attribute data-component-data -->
+    <div
+      data-component="true"
+      data-component-type="barchart"
+      data-component-data='{{site.data.report_3.value}}'
+    ></div>
+  </div>
+</div>
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-one-half">
+    <p>Service Quality</p>
+    <!-- prettier-ignore-attribute data-component-data -->
+    <div
+      data-component="true"
+      data-component-type="barchart"
+      data-component-data='{{site.data.report_4.value}}'
+    ></div>
+  </div>
+</div>
+
+<div class="hef-footer-controls hef-footer-controls--leftright">
+  <a
+    class="nhsuk-button nhsuk-button--secondary hef-button__footer--left"
+    href="../"
+  >
+    Return to home page
+  </a>
+  <a class="nhsuk-button" href="./report.html">Back to Report</a>
+</div>

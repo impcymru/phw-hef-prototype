@@ -194,6 +194,10 @@ body {
   display: flex;
   flex-direction: row;
 
+  &--padded {
+    padding: 32px;
+  }
+
   &__details {
     width: 60%;
   }
@@ -329,6 +333,15 @@ body {
 .hef-select {
   &--full-width {
     width: 100%;
+  }
+}
+
+// buttons
+.hef-button {
+  span.icon {
+    top: 4px;
+    font-size: 20px;
+    position: relative;
   }
 }
 
@@ -487,4 +500,15 @@ body {
       }
     }
   }
+}
+
+// typo
+
+.hef-standout {
+  font-size: 60px;
+}
+
+// layout
+
+.hef-vert-block {
 }

@@ -7625,6 +7625,9 @@ body {
   display: flex;
   flex-direction: row;
 }
+.hef-cardcontrol--padded {
+  padding: 32px;
+}
 .hef-cardcontrol__details {
   width: 60%;
 }
@@ -7726,6 +7729,12 @@ body {
 
 .hef-select--full-width {
   width: 100%;
+}
+
+.hef-button span.icon {
+  top: 4px;
+  font-size: 20px;
+  position: relative;
 }
 
 .hef-button-control {
@@ -7847,6 +7856,10 @@ body {
 }
 .hef-sub-expander--closed .hef-sub-expander__content h5 {
   margin-bottom: 0;
+}
+
+.hef-standout {
+  font-size: 60px;
 }
 
 /*# sourceMappingURL=main.css.map */
