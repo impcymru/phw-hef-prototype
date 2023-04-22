@@ -5,6 +5,29 @@ data: '{"name": "dave"}'
 ---
 
 {% include base.html %}
+
+<h1>All patients in your team</h1>
+
+<div class="nhsuk-card">
+  <div class="nhsuk-card__content">
+    <div class="hef-search">
+      <div class="hef-search__wrapper">
+        <div class="hef-search__container">
+          <input
+            placeholder="Search"
+            type="text"
+            class="nhsuk-input hef-search__input-control"
+          />
+
+          <div class="hef-search__button-control">
+            <button class="nhsuk-button">Find patients</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- prettier-ignore-attribute data-component-data -->
 <div
   class="hef-table"
