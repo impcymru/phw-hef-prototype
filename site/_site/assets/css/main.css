@@ -7724,6 +7724,12 @@ body {
   width: 160px;
 }
 
+.hef-login__controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .hef-select--full-width {
   width: 100%;
 }

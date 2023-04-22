@@ -326,6 +326,14 @@ body {
 }
 
 // forms
+.hef-login {
+  &__controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
 .hef-select {
   &--full-width {
     width: 100%;
