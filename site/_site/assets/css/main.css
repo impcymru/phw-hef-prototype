@@ -7525,6 +7525,17 @@ body {
   z-index: 10;
   padding-left: 20px;
 }
+.hef-menu__link--notification::after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: red;
+  border-radius: 10px;
+  top: 0;
+  right: 0;
+}
 .hef-menu__link span {
   font-size: 48px;
 }
