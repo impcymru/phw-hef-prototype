@@ -1,6 +1,37 @@
 ---
 layout: default
-title: "Reminders"
+title: 'Reminders'
 ---
 
-<h1>Reminders</h1>
+<h1>Your Reminders</h1>
+
+{% include base.html %}
+
+<div class="nhsuk-card">
+  <div class="nhsuk-card__content">
+    <div class="hef-search">
+      <div class="hef-search__wrapper">
+        <div class="hef-search__container">
+          <input
+            placeholder="Search"
+            type="text"
+            class="nhsuk-input hef-search__input-control"
+          />
+
+          <div class="hef-search__button-control">
+            <button class="nhsuk-button">Search</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- prettier-ignore-attribute data-component-data -->
+<div
+  class="hef-table"
+  data-component="true"
+  data-component-type="table"
+  data-component-data='{{ site.data.reminders.reminders }}'
+  data-component-config='{"limit": 5, "selectable": true, "base": "{{base}}/phw-hef-prototype"}'
+></div>
