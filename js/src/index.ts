@@ -5,6 +5,7 @@ import DeleteDialog from './components/deletedialog';
 import Accordion from './components/accordion';
 import BarChart from './components/barchart';
 import RadarChart from './components/radarchart';
+import ReminderDialog from './components/reminderdialog';
 
 import { register, getMap, init } from 'dom-component-helper';
 
@@ -18,6 +19,7 @@ const main = () => {
   register('accordion', Accordion);
   register('barchart', BarChart);
   register('radarchart', RadarChart);
+  register('reminderdialog', ReminderDialog);
 
   const map = getMap();
 

@@ -1,11 +1,10 @@
 import { render, BindingProps } from 'dom-component-helper';
 import * as nunjucks from 'nunjucks';
-import template from './deletedialog.html';
+import template from './reminderdialog.html';
 
-const DeleteDialog = (props: BindingProps) => {
+const ReminderDialog = (props: BindingProps) => {
   const { domElement } = props;
 
-  const button = domElement.querySelector('[data-delete-trigger]');
   let dialogContainer = domElement.querySelector('[data-dialog-container]');
 
   const doRender = () => {
@@ -26,9 +25,8 @@ const DeleteDialog = (props: BindingProps) => {
     });
   };
 
-  button.addEventListener('click', () => {
-    doRender();
-  });
+  doRender();
+  console.log('rendering...');
 };
 
-export default DeleteDialog;
+export default ReminderDialog;

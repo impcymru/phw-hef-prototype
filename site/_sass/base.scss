@@ -340,6 +340,19 @@ body {
 }
 
 // forms
+.hef-select-form {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  label {
+    display: inline-block;
+    padding-right: 10px;
+  }
+}
+
 .hef-login {
   &__controls {
     display: flex;

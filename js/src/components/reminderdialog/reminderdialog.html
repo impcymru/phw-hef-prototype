@@ -8,11 +8,16 @@
       </div>
 
       <div class="hef-dialog__body">
-        <h2>Delete user</h2>
-        <p>
-          Are you sure you want to delete this record from your team or would
-          you like to remove from here only?
-        </p>
+        <h2>Set Reminder</h2>
+        <p>Would you like to be reminded to rescore this patient?</p>
+        <div class="hef-select-form">
+          <label class="nhsuk-label" for="select-1"> Set scoring date </label>
+          <select class="nhsuk-select" id="select-1" name="select-1">
+            <option value="1">1 month</option>
+            <option value="2" selected>3 months</option>
+            <option value="3" disabled>6 months</option>
+          </select>
+        </div>
       </div>
 
       <div class="hef-dialog__controls">
@@ -22,12 +27,7 @@
         >
           Cancel
         </button>
-        <button class="nhsuk-button" data-close-trigger="true">
-          Delete here
-        </button>
-        <button class="nhsuk-button" data-close-trigger="true">
-          Delete from team
-        </button>
+        <button class="nhsuk-button" data-close-trigger="true">Submit</button>
       </div>
     </div>
   </div>

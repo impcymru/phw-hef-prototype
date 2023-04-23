@@ -7735,6 +7735,18 @@ body {
   width: 160px;
 }
 
+.hef-select-form {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.hef-select-form label {
+  display: inline-block;
+  padding-right: 10px;
+}
+
 .hef-login__controls {
   display: flex;
   flex-direction: row;
