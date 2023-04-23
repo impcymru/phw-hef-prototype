@@ -166,6 +166,52 @@
   
         
 
+
+<h1>All patients in your team</h1>
+
+<p>This team takes care of 78 patients and has completed 132 HEF assessments</p>
+
+<div class="nhsuk-card">
+  <div class="nhsuk-card__content">
+    <div class="hef-search">
+      <div class="hef-search__wrapper">
+        <div class="hef-search__container">
+          <input
+            placeholder="Search"
+            type="text"
+            class="nhsuk-input hef-search__input-control"
+          />
+
+          <div class="hef-search__button-control">
+            <button class="nhsuk-button">Find patients</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="hef-table-controls">
+  <div
+    class="hef-table-controls__control hef-table-controls__control--force-left"
+  >
+    <label class="" for="select-show">Show: </label>
+    <select class="nhsuk-select" id="select-show" name="select-show">
+      <option value="1">1 month</option>
+      <option value="2" selected>3 months</option>
+      <option value="3" disabled>6 months</option>
+    </select>
+  </div>
+
+  <div class="hef-table-controls__control">
+    <button class="nhsuk-button">Archive selected patients</button>
+  </div>
+
+  <div class="hef-table-controls__control">
+    <button class="nhsuk-button">Graph selected scores</button>
+  </div>
+</div>
+
 <!-- prettier-ignore-attribute data-component-data -->
 <div
   class="hef-table"

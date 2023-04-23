@@ -7632,6 +7632,27 @@ body {
   cursor: pointer;
 }
 
+.hef-table-controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.hef-table-controls__control {
+  padding-left: 10px;
+}
+.hef-table-controls__control--force-left {
+  margin-right: auto;
+}
+.hef-table-controls__control label {
+  font-size: 20px;
+}
+.hef-table-controls__control button,
+.hef-table-controls__control a {
+  margin-bottom: 0;
+}
+
 .hef-cardcontrol {
   display: flex;
   flex-direction: row;
