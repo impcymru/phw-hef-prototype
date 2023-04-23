@@ -203,6 +203,32 @@ body {
   }
 }
 
+//table controls
+.hef-table-controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  margin-bottom: 16px;
+
+  &__control {
+    padding-left: 10px;
+
+    &--force-left {
+      margin-right: auto;
+    }
+
+    label {
+      font-size: 20px;
+    }
+
+    button,
+    a {
+      margin-bottom: 0;
+    }
+  }
+}
+
 // profile card
 .hef-cardcontrol {
   display: flex;
