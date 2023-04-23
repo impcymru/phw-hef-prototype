@@ -6,10 +6,13 @@ data: '{"name": "dave"}'
 
 {% include base.html %}
 
-<h1>All patients in your team</h1>
+<h1>Profiles. All patients in your team</h1>
 
-<p>This team takes care of 78 patients and has completed 132 HEF assessments</p>
-
+<li class="nhsuk-contents-list__item">
+  <a class="nhsuk-contents-list__link" href="{{ base }}/patients"
+    >Patient list</a
+  >
+</li>
 <div class="nhsuk-card">
   <div class="nhsuk-card__content">
     <div class="hef-search">
@@ -56,6 +59,6 @@ data: '{"name": "dave"}'
   class="hef-table"
   data-component="true"
   data-component-type="table"
-  data-component-data='{{ site.data.patients.patients }}'
+  data-component-data='{{ site.data.demographics.demographics }}'
   data-component-config='{"selectable": true, "base": "{{base}}/phw-hef-prototype"}'
 ></div>
