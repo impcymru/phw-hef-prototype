@@ -7756,6 +7756,12 @@ body {
   width: 160px;
 }
 
+.hef-breadcrumb-link--active {
+  color: black !important;
+  cursor: default;
+  text-decoration: none;
+}
+
 .hef-select-rows__row {
   width: 100%;
   display: flex;

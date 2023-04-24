@@ -365,6 +365,16 @@ body {
   }
 }
 
+// breadcrumbs
+
+.hef-breadcrumb-link {
+  &--active {
+    color: black !important;
+    cursor: default;
+    text-decoration: none;
+  }
+}
+
 // select rows
 
 .hef-select-rows {
