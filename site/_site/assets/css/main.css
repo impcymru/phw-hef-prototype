@@ -7815,6 +7815,10 @@ body {
   justify-content: end;
   align-items: center;
 }
+.hef-footer-controls a {
+  margin-bottom: 0;
+  margin-left: 10px;
+}
 .hef-footer-controls--leftright {
   justify-content: space-between;
 }

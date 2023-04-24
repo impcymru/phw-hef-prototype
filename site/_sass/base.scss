@@ -443,6 +443,11 @@ body {
   justify-content: end;
   align-items: center;
 
+  a {
+    margin-bottom: 0;
+    margin-left: 10px;
+  }
+
   &--leftright {
     justify-content: space-between;
   }
