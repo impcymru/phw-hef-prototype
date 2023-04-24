@@ -6,10 +6,16 @@
         >check</span
       >
     </h3>
+
     <span class="material-symbols-outlined icon">expand_more</span>
   </div>
 
   <div class="hef-expander__body">
+    <div class="hef-expander__notes">
+      <a href="/" data-trigger-note="true">Add note </a>
+      <span class="material-symbols-outlined icon">note</span>
+    </div>
+
     {% for option in options %}
     <div class="hef-sub-expander hef-sub-expander--closed">
       <div class="hef-sub-expander__body">

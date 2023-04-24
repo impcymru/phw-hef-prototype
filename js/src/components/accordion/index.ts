@@ -38,6 +38,12 @@ const Accordion = (props: BindingProps) => {
         .classList.remove('check-icon--hidden');
     });
   });
+
+  output.querySelectorAll('[data-trigger-note]').forEach((note) => {
+    note.addEventListener('click', (evt: Event) => {
+      evt.preventDefault();
+    });
+  });
 };
 
 export default Accordion;

@@ -7756,6 +7756,12 @@ body {
   width: 160px;
 }
 
+.hef-breadcrumb-link--active {
+  color: black !important;
+  cursor: default;
+  text-decoration: none;
+}
+
 .hef-select-rows__row {
   width: 100%;
   display: flex;
@@ -7839,6 +7845,16 @@ body {
 }
 .hef-expander h3 .check-icon--hidden {
   display: none;
+}
+.hef-expander__notes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  margin-bottom: 20px;
+}
+.hef-expander__notes a {
+  padding-right: 10px;
 }
 .hef-expander__header {
   display: flex;
