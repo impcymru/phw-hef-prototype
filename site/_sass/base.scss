@@ -365,6 +365,24 @@ body {
   }
 }
 
+// select rows
+
+.hef-select-rows {
+  &__row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 10px;
+
+    p {
+      margin-bottom: 0;
+      padding-left: 10px;
+    }
+  }
+}
+
 // forms
 .hef-select-form {
   width: 100%;
