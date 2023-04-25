@@ -393,6 +393,35 @@ body {
   }
 }
 
+//progress bar
+
+.hef-progress {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  p {
+    margin-bottom: 0;
+    margin-right: 10px;
+  }
+
+  &__inner {
+    width: 150px;
+    height: 20px;
+    border: 1px solid #ccc;
+    position: relative;
+  }
+
+  &__bar {
+    position: absolute;
+    top: 0;
+    bottom: 100%;
+    left: 0;
+    height: 100%;
+    background: $color_nhsuk-blue;
+  }
+}
+
 // forms
 .hef-select-form {
   width: 100%;
