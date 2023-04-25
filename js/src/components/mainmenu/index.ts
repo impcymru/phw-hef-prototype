@@ -1,4 +1,4 @@
-import { render, BindingProps } from 'dom-component-helper';
+import { render, BindingProps } from '@sfdl/blep';
 
 const MainMenu = (props: BindingProps) => {
   const { domElement } = props;

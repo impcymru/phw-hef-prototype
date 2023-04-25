@@ -1,4 +1,3 @@
-import HelloWorld from './components/helloworld';
 import MainMenu from './components/mainmenu';
 import Table from './components/table';
 import DeleteDialog from './components/deletedialog';
@@ -8,12 +7,10 @@ import RadarChart from './components/radarchart';
 import ReminderDialog from './components/reminderdialog';
 import CompareDialog from './components/comparedialog';
 
-import { register, getMap, init } from 'dom-component-helper';
+import { register, getMap, init } from '@sfdl/blep';
 
 const main = () => {
   const domList = document.querySelectorAll('[data-component]');
-
-  register('helloworld', HelloWorld);
   register('mainmenu', MainMenu);
   register('table', Table);
   register('deletedialog', DeleteDialog);

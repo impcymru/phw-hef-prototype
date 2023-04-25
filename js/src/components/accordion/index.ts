@@ -1,4 +1,4 @@
-import { render, BindingProps } from 'dom-component-helper';
+import { render, BindingProps } from '@sfdl/blep';
 import * as nunjucks from 'nunjucks';
 import template from './accordion.html';
 
