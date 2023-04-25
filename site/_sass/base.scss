@@ -406,10 +406,11 @@ body {
   }
 
   &__inner {
-    width: 150px;
-    height: 20px;
+    width: 200px;
+    height: 40px;
     border: 1px solid #ccc;
     position: relative;
+    background: white;
   }
 
   &__bar {
@@ -419,6 +420,15 @@ body {
     left: 0;
     height: 100%;
     background: $color_nhsuk-blue;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    small {
+      color: white;
+      font-size: 16px;
+    }
   }
 }
 

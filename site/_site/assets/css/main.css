@@ -7785,10 +7785,11 @@ body {
   margin-right: 10px;
 }
 .hef-progress__inner {
-  width: 150px;
-  height: 20px;
+  width: 200px;
+  height: 40px;
   border: 1px solid #ccc;
   position: relative;
+  background: white;
 }
 .hef-progress__bar {
   position: absolute;
@@ -7797,6 +7798,14 @@ body {
   left: 0;
   height: 100%;
   background: #005eb8;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.hef-progress__bar small {
+  color: white;
+  font-size: 16px;
 }
 
 .hef-select-form {
