@@ -5,6 +5,14 @@
   >
     Save draft and exit
   </a>
+
+  <div class="hef-progress">
+    <p>Progress</p>
+    <div class="hef-progress__inner">
+      <div class="hef-progress__bar" style="width: {{include.progress}}"></div>
+    </div>
+  </div>
+
   {% if include.next == "final" %}
   <a class="nhsuk-button" href="./report.html">Submit</a>
   {% else %}
