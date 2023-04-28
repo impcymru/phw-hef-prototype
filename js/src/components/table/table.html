@@ -24,11 +24,19 @@
       <td><input data-select="true" type="checkbox" value="" /></td>
       {% endif %} {% for header in headers %}
       <td>
-        {% if header.link %}
+        {% if header.link %} {% if row[header.key] == 'David Readytoscore' %}
         <a href="/{{base}}/{{header.link}}?p={{row[header.linkVal]}}">
           {{ row[header.key] }}</a
         >
-        {% else %} <span>{{ row[header.key] }}</span> {% endif %}
+        {% elif row[header.key] == 'Betty Existingscoring' %}
+        <a href="/{{base}}/patient/summaryscoreactive.html">
+          {{ row[header.key] }}</a
+        >
+        {% else %}
+        <a href="/{{base}}/{{header.link}}?p={{row[header.linkVal]}}">
+          {{ row[header.key] }}</a
+        >
+        {% endif %} {% else %} <span>{{ row[header.key] }}</span> {% endif %}
       </td>
       {% endfor %}
     </tr>

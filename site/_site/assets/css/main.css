@@ -7656,9 +7656,10 @@ body {
   flex-direction: row;
 }
 .hef-cardcontrol__details {
-  width: 60%;
+  width: 30%;
 }
 .hef-cardcontrol__controls {
+  width: 70%;
   display: flex;
   flex-direction: row;
   justify-content: end;

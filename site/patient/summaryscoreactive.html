@@ -1,0 +1,17 @@
+---
+layout: default
+title: 'Summary'
+---
+
+<h1>Patient Summary</h1>
+
+{% include profileheader.html existingsummary="true" %}
+
+<!-- prettier-ignore-attribute data-component-data -->
+<div
+  class="hef-table"
+  data-component="true"
+  data-component-type="table"
+  data-component-data='{{ site.data.patient.patients }}'
+  data-component-config='{"selectable": true, "limit": 5}'
+></div>
