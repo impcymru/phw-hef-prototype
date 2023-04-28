@@ -1,7 +1,9 @@
-<div class="hef-expander hef-expander--closed">
+<div
+  class="hef-expander {% if config.open %} {% else %}hef-expander--closed {%endif%}"
+>
   <div class="hef-expander__header" data-trigger="true">
     <h3>
-      {{title}}<span
+      {{data.title}}<span
         class="material-symbols-outlined check-icon check-icon--hidden"
         >check</span
       >
@@ -16,7 +18,7 @@
       <span class="material-symbols-outlined icon">note</span>
     </div>
 
-    {% for option in options %}
+    {% for option in data.options %}
     <div class="hef-sub-expander hef-sub-expander--closed">
       <div class="hef-sub-expander__body">
         <div class="hef-sub-expander__content">
