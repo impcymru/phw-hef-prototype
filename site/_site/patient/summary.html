@@ -185,13 +185,28 @@
       </div>
 
       <div class="hef-cardcontrol__controls">
+        <!-- prettier-ignore-attribute data-component-data -->
         <div
           class="hef-cardcontrol_control"
           data-component="true"
           data-component-type="deletedialog"
+          data-component-data='{"label": "deceased"}'
         >
           <button class="nhsuk-button" data-delete-trigger="true">
-            Delete User
+            Set deceased
+          </button>
+          <div data-dialog-container="true"></div>
+        </div>
+
+        <!-- prettier-ignore-attribute data-component-data -->
+        <div
+          class="hef-cardcontrol_control"
+          data-component="true"
+          data-component-type="deletedialog"
+          data-component-data='{"label": "discharged"}'
+        >
+          <button class="nhsuk-button" data-delete-trigger="true">
+            Set discharged
           </button>
           <div data-dialog-container="true"></div>
         </div>
@@ -199,7 +214,7 @@
         <div class="hef-cardcontrol_control">
           
           <a href="../patient/scoring0.html" class="nhsuk-button"
-            >New Assessment</a
+            >New assessment</a
           >
           
         </div>
