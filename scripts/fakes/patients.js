@@ -45,6 +45,24 @@ for (let i = 0; i < total; i++) {
   output.rows.push(makePatient());
 }
 
+output.rows.unshift({
+  patient_id: 'P001',
+  patient_name: 'David Readytoscore',
+  birthdate: '01/01/2000',
+  latest_score: '50',
+  practitioner: 'Gwen',
+  last_assessment_date: '10/02/2023',
+});
+
+output.rows.unshift({
+  patient_id: 'P002',
+  patient_name: 'Betty Existingscoring',
+  birthdate: '01/01/2000',
+  latest_score: '50',
+  practitioner: 'Gwen',
+  last_assessment_date: '10/02/2023',
+});
+
 const writeVal = `patients: '${JSON.stringify(output).replaceAll("'", '’')}'`;
 
 fs.writeFileSync('../../site/_data/patients.yml', writeVal);

@@ -1,4 +1,15 @@
-{% include base.html %}
+{% include base.html %} {% if include.existingsummary %}
+<div class="nhsuk-warning-callout">
+  <h3 class="nhsuk-warning-callout__label">
+    <span role="text">
+      <span class="nhsuk-u-visually-hidden">Important: </span>
+      Assessment already started
+    </span>
+  </h3>
+  <p>An assessment for this patient has been started by Gwen on 01/01/2023.</p>
+</div>
+{% endif %}
+
 <div class="nhsuk-card">
   <div class="nhsuk-card__content">
     <div class="hef-cardcontrol">
@@ -23,9 +34,15 @@
         </div>
 
         <div class="hef-cardcontrol_control">
+          {% if include.existingsummary %}
+          <a href="{{base}}/patient/scoring0.html" class="nhsuk-button"
+            >Continue Assessment</a
+          >
+          {% else %}
           <a href="{{base}}/patient/scoring0.html" class="nhsuk-button"
             >New Assessment</a
           >
+          {% endif %}
         </div>
       </div>
     </div>
