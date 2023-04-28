@@ -4,12 +4,13 @@ import template from './deletedialog.html';
 
 const DeleteDialog = (props: BindingProps) => {
   const { domElement } = props;
+  const data = JSON.parse(props.data);
 
   const button = domElement.querySelector('[data-delete-trigger]');
   let dialogContainer = domElement.querySelector('[data-dialog-container]');
 
   const doRender = () => {
-    const output = nunjucks.renderString(template, {});
+    const output = nunjucks.renderString(template, { label: data.label });
 
     const body = document.createElement('div');
     body.innerHTML = output;
