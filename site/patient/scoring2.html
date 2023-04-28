@@ -15,6 +15,16 @@ title: 'Scoring'
   data-component="true"
   data-component-type="accordion"
   data-component-data='{{ inner }}'
+  {%
+  if
+  forloop.index0
+  <
+  1
+  %}
+  data-component-config='{"open": true}'
+  {%
+  endif
+  %}
 >
   no js mounted yet...
 </div>

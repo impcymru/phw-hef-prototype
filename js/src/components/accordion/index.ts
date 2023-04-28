@@ -6,8 +6,9 @@ const Accordion = (props: BindingProps) => {
   const component = document.createElement('div');
 
   const data = JSON.parse(props.data);
+  const config = JSON.parse(props.config);
 
-  const content = nunjucks.renderString(template, data);
+  const content = nunjucks.renderString(template, { data, config });
 
   component.innerHTML = content;
 
