@@ -7497,6 +7497,7 @@ body {
 }
 .nhsuk-header__logo--offset a {
   margin-right: 20px;
+  margin-top: -6px;
 }
 .nhsuk-header__logo--offset a.nhsuk-header__link--offset {
   margin-top: -10px;
@@ -7506,6 +7507,10 @@ body {
 }
 .nhsuk-header__logo--offset svg {
   top: 0px;
+}
+
+.hef-header-logo {
+  width: 200px;
 }
 
 .hef-menu {
