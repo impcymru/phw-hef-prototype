@@ -23,6 +23,7 @@ body {
     &--offset {
       a {
         margin-right: 20px;
+        margin-top: -6px;
 
         &.nhsuk-header__link--offset {
           margin-top: -10px;
@@ -38,6 +39,10 @@ body {
       }
     }
   }
+}
+
+.hef-header-logo {
+  width: 200px;
 }
 
 // main menu
