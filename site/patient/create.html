@@ -3,6 +3,8 @@ layout: default
 title: 'Create'
 ---
 
+{% include base.html %}
+
 <h1>Create patient</h1>
 
 <fieldset class="nhsuk-fieldset">
@@ -124,7 +126,10 @@ title: 'Create'
     Previous page</a
   >
 
-  <a href="{{base}}/home/" class="nhsuk-button nhsuk-button--secondary">
+  <a
+    href="{{base}}/patients/drafts.html"
+    class="nhsuk-button nhsuk-button--secondary"
+  >
     Save draft and exit
   </a>
   <a href="./summary.html" class="nhsuk-button">Save patient details</a>
