@@ -431,6 +431,15 @@ body {
     align-items: center;
     justify-content: center;
 
+    &--zero {
+      width: 100% !important;
+      background: transparent;
+
+      small {
+        color: black !important;
+      }
+    }
+
     small {
       color: white;
       font-size: 16px;

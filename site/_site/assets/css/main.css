@@ -7807,6 +7807,13 @@ body {
   align-items: center;
   justify-content: center;
 }
+.hef-progress__bar--zero {
+  width: 100% !important;
+  background: transparent;
+}
+.hef-progress__bar--zero small {
+  color: black !important;
+}
 .hef-progress__bar small {
   color: white;
   font-size: 16px;
