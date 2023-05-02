@@ -9,7 +9,10 @@
   <div class="hef-progress">
     <p>Progress</p>
     <div class="hef-progress__inner">
-      <div class="hef-progress__bar" style="width: {{include.progress}}">
+      <div
+        class="hef-progress__bar{% if include.progress == '0%' %} hef-progress__bar--zero{% endif %}"
+        style="width: {{include.progress}}"
+      >
         <small>{{include.progress}}</small>
       </div>
     </div>
