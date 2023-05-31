@@ -613,23 +613,28 @@ body {
     justify-content: center;
 
     &--0 {
-      background: #ff0000;
+      background: #b30000;
+      color: #ffffff;
     }
 
     &--1 {
-      background: #ff6600;
+      background: #e34a33;
+      color: #ffffff;
     }
 
     &--2 {
-      background: #ff9900;
+      background: #fc8d59;
+      color: #ffffff;
     }
 
     &--3 {
-      background: #ffc000;
+      background: #c0b7d1;
+      color: #645482;
     }
 
     &--4 {
-      background: #25db48;
+      background: #bdc9e1;
+      color: #364b76;
     }
   }
 
